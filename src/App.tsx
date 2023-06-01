@@ -6,9 +6,7 @@ import { FaBeer } from "react-icons/fa";
 function App() {
   return (
     <div className="App">
-      <h3>
-        Lets go for a <FaBeer />?{" "}
-      </h3>
+      <h3 className="text-green-700">hi</h3>
     </div>
   );
 }
