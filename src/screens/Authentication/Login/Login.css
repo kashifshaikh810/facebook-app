@@ -1,0 +1,22 @@
+.login-container {
+  @apply bg-[#f0f2f5] pt-[80px] pb-[80px];
+}
+
+.fb-img-container {
+  @apply text-center;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  @apply inline-flex;
+}
+
+.fb-img {
+  @apply w-[240px] text-center mt-[-44px] mr-[0px] mb-[-4px] ml-[0px];
+}

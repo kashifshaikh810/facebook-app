@@ -1,14 +1,14 @@
 import React from "react";
 
-import "./App.css";
-import { FaBeer } from "react-icons/fa";
+import RootNavigation from "./rootNavigation/RootNavigation";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h3 className="text-green-700">hi</h3>
+      {/* <h1>hello world</h1> */}
+      <RootNavigation />
     </div>
   );
-}
+};
 
 export default App;

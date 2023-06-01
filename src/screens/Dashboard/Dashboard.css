@@ -1,0 +1,119 @@
+.container {
+  @apply flex justify-center bg-[#f0f2f5] min-h-[100vh] w-full max-w-full m-0 p-0 pt-[7rem] pb-[132px] max-[900px]:pt-[2rem] max-[1100px]:pl-24 max-[617px]:pl-0 max-[495px]:overflow-x-scroll max-[495px]:pl-36;
+}
+
+.content {
+  @apply grid space-x-32 grid-cols-[500px_minmax(400px,_1fr)_100px] max-[1029px]:grid-cols-[330px_minmax(300px,_1fr)_100px] max-[1022px]:grid-cols-[350px_minmax(300px,_1fr)_100px] max-[950px]:grid-cols-[300px_minmax(300px,_1fr)_100px] max-[900px]:grid-cols-1 max-[900px]:space-x-0 max-[1029px]:space-x-16 max-[960px]:space-x-10 max-[495px]:block;
+}
+
+.block-one {
+  @apply flex-col max-[900px]:flex items-center;
+}
+
+.facebook-img {
+  @apply h-[70px] m-[-20px] max-[1029px]:text-center;
+}
+
+.recent-text-container {
+  @apply mt-4 pb-[12px] mb-[12px] flex-col max-[900px]:flex justify-center items-center;
+}
+
+.recent-text {
+  @apply text-[24px] leading-[28px] text-[#1c1e21] font-bold;
+}
+
+.click-text {
+  @apply text-[#606770] text-[15px] leading-[24px];
+}
+
+.map {
+  @apply flex flex-row;
+}
+
+.map-container {
+  @apply border border-gray-200 w-[167px] h-[210px] flex flex-wrap justify-center rounded-lg bg-[#fff] relative cursor-pointer;
+}
+
+.profile-img {
+  @apply w-[167px] h-[160px] bg-no-repeat inline-block rounded-tr-md rounded-tl-md;
+}
+
+.firstName {
+  @apply w-[165px] text-center bg-white rounded-br-lg rounded-bl-lg leading-[22px] text-[18px];
+}
+
+.plus-icon-container {
+  @apply flex w-full h-[160px] justify-center items-center rounded-tr-lg rounded-tl-lg bg-[#f5f6f7];
+}
+
+.plus-icon {
+  @apply w-[42px] h-[42px];
+}
+
+.close-button-container {
+  @apply w-[16px] h-[16px] rounded-[15px] absolute top-[4px] left-[4px] z-[1px] whitespace-nowrap inline-block cursor-pointer text-center bg-[#0000004d];
+}
+
+.close-button-containerTwo {
+  @apply w-[25px] h-[25px] flex justify-center items-center hover:ease-in duration-300 rounded-full bg-white absolute top-[-6px] left-[-6px] z-[1px] whitespace-nowrap cursor-pointer text-center;
+}
+
+.close-button {
+  @apply bg-no-repeat bg-[length:43px_89px] w-[12px] h-[12px] bottom-[2px] block absolute right-[2px] opacity-[1] origin-bottom-right;
+}
+
+.notifications-num {
+  @apply bg-[#fa3e3e] rounded-[24px] shadow-[-1px_1px_2px_0_#0000004d] text-[#fff] cursor-default text-[13px] h-[24px] leading-[24px] absolute right-[-4px] text-center top-[-4px] w-[24px];
+}
+
+.inputs-card-container {
+  @apply m-0 mt-7 w-[500px] h-[396px];
+}
+
+.inputs-card {
+  @apply border-none w-auto h-[350px] bg-white mt-[4px] pt-[10px] pb-[24px] text-center rounded-[8px] m-[40px] p-[20px] shadow-xl;
+}
+
+.create-text-container {
+  @apply text-center text-[14px];
+}
+
+.create-text {
+  @apply font-bold cursor-pointer hover:border-b border-black text-[#1c1e21] text-[14px];
+}
+
+.email-text-input-container {
+  @apply text-[17px] w-full p-[6px] pl-0 pr-0 m-auto text-center font-semibold;
+}
+
+.email-text-input {
+  @apply text-[17px] w-full border-[1px] border-[#dddfe2] focus:outline-none p-[14px] rounded-[6px] focus:border-[#1b74e4] focus:caret-[#1b74e4];
+}
+
+.login-button-container {
+  @apply pt-[6px] text-center;
+}
+
+.login-button {
+  @apply bg-[#1877f2] border-none rounded-[6px] text-[20px] leading-[48px] p-[1px] w-full text-white font-semibold;
+}
+
+.Forgotten-text-container {
+  @apply mt-[16px] text-center;
+}
+
+.Forgotten-text {
+  @apply text-[#1877f2] text-[14px] font-[500] hover:border-b border-[#1877f2];
+}
+
+.divider {
+  @apply border-b-[1px] border-[#dadde1] mt-[20px] mb-[20px];
+}
+
+.create-acc-button-container {
+  @apply mt-[6px] text-center;
+}
+
+.create-acc-button {
+  @apply font-semibold border-none rounded-[6px] text-[17px] leading-[48px] pl-[16px] pr-[16px] inline-block bg-[#42b72a] text-white;
+}
