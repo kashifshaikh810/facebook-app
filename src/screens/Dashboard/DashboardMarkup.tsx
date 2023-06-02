@@ -156,7 +156,7 @@ const DashboardMarkup = (props: IProps) => {
                   </a>
                 </div>
 
-                <div className="divider"></div>
+                <div className="divider" />
 
                 <div className="create-acc-button-container">
                   <button className="create-acc-button">
