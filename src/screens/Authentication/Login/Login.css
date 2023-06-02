@@ -1,5 +1,5 @@
 .login-container {
-  @apply bg-[#f0f2f5] pt-[80px] pb-[80px];
+  @apply bg-[#f0f2f5] pt-[80px] pb-[80px] overflow-x-scroll;
 }
 
 .fb-img-container {
@@ -19,4 +19,64 @@ object {
 
 .fb-img {
   @apply w-[240px] text-center mt-[-44px] mr-[0px] mb-[-4px] ml-[0px];
+}
+
+.input-card-container {
+  @apply m-auto w-[500px] h-[396px];
+}
+
+.input-card {
+  @apply border-[1px] border-[#dddfe2] w-[396px] h-[410px] bg-white mt-[4px] pt-[0px] pr-[0px] pb-[14px] pl-[0px] text-center rounded-[8px] m-[40px] p-[20px] shadow-xl;
+}
+
+.in-to-facebook-container {
+  @apply pt-[24px] pr-[0px] pb-[16px] pl-[0px] text-center;
+}
+
+.in-to-content {
+  @apply text-[18px] leading-[22px] font-[500];
+}
+
+.text-input-container {
+  @apply text-[17px] w-full p-[6px] pl-0 pr-0 m-auto text-center font-semibold;
+}
+
+.text-input {
+  @apply text-[17px] w-11/12 border-[1px] border-[#dddfe2] focus:outline-none p-[14px] rounded-[6px] focus:border-[#1b74e4] focus:caret-[#1b74e4];
+}
+
+.button-container {
+  @apply pt-[6px] text-center;
+}
+
+.button {
+  @apply bg-[#1877f2] hover:bg-blue-600 border-none rounded-[6px] text-[20px] leading-[48px] p-[1px] w-11/12 text-white font-semibold;
+}
+
+.text-container {
+  @apply mt-[16px] text-center;
+}
+
+.text {
+  @apply text-[#1877f2] text-[14px] font-[500] hover:border-b border-[#1877f2];
+}
+
+.or-text-container {
+  @apply flex flex-row items-center;
+}
+
+.or-text {
+  @apply text-[#96999e] text-[12px];
+}
+
+.divider {
+  @apply border-b-[1px] w-6/12 text-center m-auto mr-[20px] ml-[20px] border-[#dadde1] mt-[10px] mb-[10px] whitespace-nowrap overflow-hidden;
+}
+
+.acc-button-container {
+  @apply mt-[6px] text-center;
+}
+
+.acc-button {
+  @apply font-semibold hover:bg-green-600 border-none rounded-[6px] text-[17px] leading-[48px] pl-[16px] pr-[16px] inline-block bg-[#42b72a] text-white;
 }
