@@ -1,8 +1,8 @@
-import React from "react";
 import { MdClose } from "react-icons/md";
 
 import Footer from "../../components/Footer/Footer";
 import TextInput from "../../components/TextInput/TextInput";
+import myPlus from "../../components/images/plus.png";
 
 import "./Dashboard.css";
 
@@ -74,7 +74,12 @@ const DashboardMarkup = (props: IProps) => {
                     )}
                     {i >= 1 ? (
                       <div className="plus-icon-container">
-                        <i className="plus-icon pack-train"></i>
+                        <i
+                          className="plus-icon"
+                          style={{
+                            backgroundImage: `url(${myPlus})`,
+                          }}
+                        ></i>
                       </div>
                     ) : (
                       <>
@@ -91,9 +96,10 @@ const DashboardMarkup = (props: IProps) => {
                             <MdClose name="MdClose" size={20} color="#b5b5b5" />
                           ) : (
                             <div
-                              className="close-button pack-train"
+                              className="close-button"
                               style={{
                                 backgroundPosition: "-25px -43px",
+                                backgroundImage: `url(${myPlus})`,
                               }}
                             />
                           )}
