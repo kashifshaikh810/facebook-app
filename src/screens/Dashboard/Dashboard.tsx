@@ -8,11 +8,6 @@ interface IState {
   index: number;
 }
 
-const defaultVal = {
-  isShown: false,
-  index: Number,
-};
-
 const Dashboard = () => {
   const [isShowCloseIcon, setIsShowCloseIcon] = useState<IState>();
 

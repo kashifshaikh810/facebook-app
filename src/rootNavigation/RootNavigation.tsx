@@ -10,7 +10,7 @@ const RootNavigation = () => {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/red" element={<SignUp />} />
+        <Route path="/reg" element={<SignUp />} />
       </Routes>
     </Router>
   );

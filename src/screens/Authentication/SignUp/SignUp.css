@@ -1,0 +1,91 @@
+.reg-container {
+  @apply outline-none min-h-[640px] w-auto pb-[20px] bg-[#f0f2f5];
+}
+
+.reg-img-container {
+  @apply pt-[5px] text-center;
+}
+
+.reg-img {
+  @apply h-[100px] text-center;
+}
+
+.reg-card-container {
+  @apply pt-[5px];
+}
+
+.reg-card-content {
+  @apply w-[400px] pt-[0px] pr-[20px] pb-[0px] pl-[0px] mt-[0px] mr-auto mb-[30px] ml-auto text-center;
+}
+
+.reg-account-container {
+  @apply bg-[#fff] rounded-tl-[8px] rounded-tr-[8px] box-border pt-[10px] pb-[10px] pr-[16px] pl-[16px] relative w-[432px] z-[1] text-center border-t-[1px] border-l-[1px] border-r-[1px];
+}
+
+.reg-account-text {
+  @apply text-[25px] leading-[32px] text-center mb-[0px] font-[600];
+}
+
+.it-quick-text {
+  @apply text-[#606770] text-[15px] font-normal;
+}
+
+.reg-box-container {
+  @apply mt-[0px] mr-auto mb-[0px] ml-auto pb-[30px];
+}
+
+.reg-box {
+  @apply bg-[#fff] border-t-[1px] border-[#dadde1] rounded-br-[8px] rounded-bl-[8px] p-[16px] box-border w-[432px] shadow-xl h-[520px];
+}
+
+.reg-form {
+  @apply p-[0px] m-[0px];
+}
+
+.full-name-inputs {
+  @apply w-[401px];
+}
+
+.reg-firstName-input-container {
+  @apply mb-[10px] float-left inline-block relative;
+}
+
+.reg-firstName-input {
+  @apply w-[194px] placeholder:text-[#8d949e] font-[600] border-[1px] text-[15px] leading-[16px] border-[#ccd0d5] p-[11px] rounded-[4px] focus:outline-none;
+}
+
+.reg-lastName-input-container {
+  @apply mb-[10px] float-right;
+}
+
+.reg-lastName-input {
+  @apply w-[194px] placeholder:text-[#8d949e] font-[600] border-[1px] text-[15px] leading-[16px] border-[#ccd0d5] p-[11px] rounded-[4px] focus:outline-none;
+}
+
+.reg-mobileNumber-input-container {
+  @apply relative inline-block w-[399px] mb-[10px] text-[15px] leading-[16px];
+}
+
+.reg-mobileNumber-input {
+  @apply w-full placeholder:text-[#8d949e] font-[600] border-[1px] text-[15px] leading-[16px] border-[#ccd0d5] p-[11px] rounded-[5px] focus:outline-none;
+}
+
+.reg-newPassword-input-container {
+  @apply mb-[10px] inline-block relative w-full;
+}
+
+.reg-newPassword-input {
+  @apply w-full placeholder:text-[#8d949e] font-[600] border-[1px] text-[15px] leading-[16px] border-[#ccd0d5] p-[11px] rounded-[5px] focus:outline-none;
+}
+
+.reg-dateOfBirth-container {
+  @apply w-full relative;
+}
+
+.reg-dateOfBirth-text {
+  @apply mb-[4px] float-left text-[#606770] text-[12px] leading-[20px] mt-[2px] font-[500];
+}
+
+.reg-questionIcon-container {
+  @apply text-inherit leading-[12px] ml-[4px];
+}
