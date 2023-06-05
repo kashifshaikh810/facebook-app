@@ -64,7 +64,7 @@ const Footer = (props: IProps) => {
   const listTwoData = [
     {
       title: "Sign Up",
-      onClick: () => {},
+      onClick: () => props?.navigate("/reg"),
       style: "cursor-pointer text-[12px] text-[#737373]",
     },
     {
