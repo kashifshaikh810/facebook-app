@@ -83,9 +83,62 @@
 }
 
 .reg-dateOfBirth-text {
-  @apply mb-[4px] float-left text-[#606770] text-[12px] leading-[20px] mt-[2px] font-[500];
+  @apply mb-[4px] float-left text-[#606770] text-[12px] leading-[20px] mt-[2px] font-[500] w-full text-left;
 }
 
 .reg-questionIcon-container {
-  @apply text-inherit leading-[12px] ml-[4px];
+  @apply text-inherit leading-[12px] ml-[4px] w-[150px];
+}
+
+.reg-questionIcon {
+  background-position: 0px -60px;
+  background-size: 22px 73px;
+  background-repeat: no-repeat;
+  line-height: 12px;
+  @apply w-[12px] h-[12px] inline-block text-inherit;
+}
+
+.reg-select-container {
+  @apply relative text-left;
+}
+
+.reg-select-content {
+  @apply inline-block;
+}
+
+.reg-select-main {
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  background-position: right 5px center;
+  background-size: 14px;
+  padding: 0px 8px;
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  @apply rounded-[4px] text-[#1c1e21] text-[15px] font-normal h-[36px] leading-[20px] w-[125px] bg-[#fff] border-[1px] border-[#ccd0d5] focus:outline-none;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.reg-gender-container {
+  margin: -8px -6px -6px;
+  @apply flex flex-wrap w-[411px];
+}
+
+.reg-gender-map {
+  flex: 1 0 auto;
+  margin: 0px 6px 0px;
+  @apply bg-white border-[1px] border-[#ccd0d5] box-border inline-block font-normal h-[36px] p-[0] relative w-auto rounded-[4px];
+}
+
+.reg-label {
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  line-height: 36px;
+  padding: 0px 55px 0px 0px;
+  @apply box-border inline-block text-[15px] w-[100%] font-normal text-[#1c1e21];
+}
+
+.reg-input-radio {
+  @apply h-[36px] m-[0px] absolute right-[10px] top-[0px] text-[15px] bg-white text-[#1c1e21] font-normal;
 }
