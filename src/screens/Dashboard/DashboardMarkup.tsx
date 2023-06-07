@@ -28,6 +28,8 @@ interface IProps {
   setIsShowCloseIcon: Function;
   maxWidth: Number;
   navigate: Function;
+  isShowSignUpModal: boolean;
+  setIsShowSignUpModal: Function;
 }
 
 const DashboardMarkup = (props: IProps) => {
@@ -35,7 +37,12 @@ const DashboardMarkup = (props: IProps) => {
 
   return (
     <div>
-      {/* <Modal text="modal" /> */}
+      <Modal
+        isShowSignUpModal={props.isShowSignUpModal}
+        isShowAddAccountModal={false}
+        isShowExistAccountModal={false}
+        setIsShowSignUpModal={props.setIsShowSignUpModal}
+      />
       <div className="container">
         <div className={`content ${maxWidth > 1029 ? "ml-24" : "ml-0"}`}>
           <div className="block-one">
@@ -163,7 +170,13 @@ const DashboardMarkup = (props: IProps) => {
                 </div>
 
                 <div className="create-acc-button-container">
-                  <button className="create-acc-button">
+                  <button
+                    className="create-acc-button"
+                    onClick={(e: any) => {
+                      e.preventDefault();
+                      props.setIsShowSignUpModal(true);
+                    }}
+                  >
                     Create new account
                   </button>
                 </div>

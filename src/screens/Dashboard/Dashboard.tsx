@@ -4,12 +4,13 @@ import { useNavigate } from "react-router-dom";
 import DashboardMarkup from "./DashboardMarkup";
 
 interface IState {
-  isShown: boolean | false;
-  index: number;
+  isShown?: boolean | false;
+  index?: number;
 }
 
 const Dashboard = () => {
   const [isShowCloseIcon, setIsShowCloseIcon] = useState<IState>();
+  const [isShowSignUpModal, setIsShowSignUpModal] = useState<boolean>(false);
 
   const navigate = useNavigate();
 
@@ -40,6 +41,8 @@ const Dashboard = () => {
       setIsShowCloseIcon={setIsShowCloseIcon}
       maxWidth={windowDimensions?.width}
       navigate={navigate}
+      isShowSignUpModal={isShowSignUpModal}
+      setIsShowSignUpModal={setIsShowSignUpModal}
     />
   );
 };
