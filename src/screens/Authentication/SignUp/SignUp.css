@@ -142,3 +142,61 @@ select {
 .reg-input-radio {
   @apply h-[36px] m-[0px] absolute right-[10px] top-[0px] text-[15px] bg-white text-[#1c1e21] font-normal;
 }
+
+.reg-optionalGender-input-container {
+  @apply flex flex-wrap w-[411px] mt-[10px];
+}
+
+.reg-optionalGender-input-content {
+  @apply relative inline-block w-[399px] mb-[10px] mt-[10px] text-[15px] leading-[16px];
+}
+
+.reg-optionalGender-input {
+  @apply w-full placeholder:text-[#8d949e] font-[600] border-[1px] text-[15px] leading-[16px] border-[#ccd0d5] p-[11px] rounded-[5px] focus:outline-none;
+}
+
+.info-text-container {
+  @apply flex flex-wrap w-[399px];
+}
+
+.info-text {
+  @apply w-auto text-[#777] text-[11px] text-left mt-[15px];
+}
+
+.by-clicking-container {
+  @apply w-[399px];
+}
+
+.by-clicking-text {
+  @apply w-auto text-[#777] text-[11px] mt-[10px] text-left;
+}
+
+.reg-useable-text {
+  text-decoration: none;
+  @apply text-[#385898] cursor-pointer hover:border-b-[1px] border-[#385898];
+}
+
+.reg-button-container {
+  @apply mt-[6px] text-center;
+}
+
+.reg-button {
+  background: none;
+  text-shadow: none;
+  line-height: 126%;
+  letter-spacing: normal;
+  text-rendering: optimizelegibility;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @apply font-bold hover:bg-green-600 border-none rounded-[6px] text-[18px] inline-block bg-[#00a400] text-white shadow-none h-[36px] overflow-hidden text-center min-w-[194px] relative hover:text-[#f3f3f3];
+}
+
+.reg-already-account {
+  padding: 10px 0;
+  @apply relative text-center;
+}
+
+.reg-already-account-text {
+  line-height: 20px;
+  @apply text-[#1877f2] text-[17px] text-center font-[500];
+}

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Footer from "../../../components/Footer/Footer";
 import TextInput from "../../../components/TextInput/TextInput";
 import "./SignUp.css";
 
@@ -67,192 +69,245 @@ for (let i = minOffset; i <= maxOffset; i++) {
 
 const SignUp = () => {
   const [gender, setGender] = useState<any | null>({ selected: "" });
+  const navigate = useNavigate();
 
-  console.log("====================================");
-  console.log(gender?.selected);
-  console.log("====================================");
   return (
-    <div className="reg-container">
-      <div className="reg-img-container">
-        <img
-          src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
-          alt="fb-img"
-          className="reg-img"
-        />
-      </div>
-      <div className="reg-card-container">
-        <div className="reg-card-content">
-          <div className="reg-account-container">
-            <div className="reg-account-text">Create a new account</div>
-            <div className="it-quick-text">It's quick and easy.</div>
-          </div>
-          <div>
-            <div className="reg-box-container">
-              <div className="reg-box">
-                <form action="/" className="reg-form">
-                  <div>
-                    <div className="full-name-inputs">
-                      <div className="reg-firstName-input-container">
-                        <TextInput
-                          type="text"
-                          className="reg-firstName-input"
-                          placeholder="First name"
-                          name="First name"
-                        />
-                      </div>
-                      <div className="reg-lastName-input-container">
-                        <TextInput
-                          type="text"
-                          className="reg-lastName-input"
-                          placeholder="Last name"
-                          name="Last name"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="reg-mobileNumber-input-container">
+    <>
+      <div className="reg-container">
+        <div className="reg-img-container">
+          <img
+            src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+            alt="fb-img"
+            className="reg-img"
+          />
+        </div>
+        <div className="reg-card-container">
+          <div className="reg-card-content">
+            <div className="reg-account-container">
+              <div className="reg-account-text">Create a new account</div>
+              <div className="it-quick-text">It's quick and easy.</div>
+            </div>
+            <div>
+              <div className="reg-box-container">
+                <div className="reg-box">
+                  <form action="/" className="reg-form">
                     <div>
-                      <div>
-                        <TextInput
-                          type="email"
-                          className="reg-mobileNumber-input"
-                          placeholder="Mobile number email address"
-                          name="Mobile number email address"
-                        />
+                      <div className="full-name-inputs">
+                        <div className="reg-firstName-input-container">
+                          <TextInput
+                            type="text"
+                            className="reg-firstName-input"
+                            placeholder="First name"
+                            name="First name"
+                          />
+                        </div>
+                        <div className="reg-lastName-input-container">
+                          <TextInput
+                            type="text"
+                            className="reg-lastName-input"
+                            placeholder="Last name"
+                            name="Last name"
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="reg-newPassword-input-container">
-                    <div>
+                    <div className="reg-mobileNumber-input-container">
                       <div>
-                        <TextInput
-                          type="password"
-                          className="reg-newPassword-input"
-                          placeholder="New Password"
-                          name="Password"
-                        />
+                        <div>
+                          <TextInput
+                            type="email"
+                            className="reg-mobileNumber-input"
+                            placeholder="Mobile number email address"
+                            name="Mobile number email address"
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div className="reg-dateOfBirth-container">
-                    <div className="reg-dateOfBirth-text">
-                      Date of birth
-                      <a href="/" className="reg-questionIcon-container">
-                        <i
-                          className="reg-questionIcon"
-                          style={{
-                            backgroundImage: `url(${img})`,
-                          }}
-                        ></i>
-                      </a>
+                    <div className="reg-newPassword-input-container">
+                      <div>
+                        <div>
+                          <TextInput
+                            type="password"
+                            className="reg-newPassword-input"
+                            placeholder="New Password"
+                            name="Password"
+                          />
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="reg-select-container">
-                    <span className="reg-select-content">
-                      <span>
-                        <select
-                          className="reg-select-main"
-                          style={{ backgroundImage: `url(${menuImg})` }}
-                        >
-                          {numbersData.map((item, index) => {
-                            return (
-                              <option key={index} value={item.number}>
-                                {item.number}
-                              </option>
-                            );
-                          })}
-                        </select>
 
-                        <select
-                          className="reg-select-main ml-[12px]"
-                          style={{ backgroundImage: `url(${menuImg})` }}
-                        >
-                          {monthNameData.map((item, index) => {
-                            return (
-                              <option key={index} value={item.monthName}>
-                                {item.monthName}
-                              </option>
-                            );
-                          })}
-                        </select>
+                    <div className="reg-dateOfBirth-container">
+                      <div className="reg-dateOfBirth-text">
+                        Date of birth
+                        <a href="/" className="reg-questionIcon-container">
+                          <i
+                            className="reg-questionIcon"
+                            style={{
+                              backgroundImage: `url(${img})`,
+                            }}
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="reg-select-container">
+                      <span className="reg-select-content">
+                        <span>
+                          <select
+                            className="reg-select-main"
+                            style={{ backgroundImage: `url(${menuImg})` }}
+                          >
+                            {numbersData.map((item, index) => {
+                              return (
+                                <option key={index} value={item.number}>
+                                  {item.number}
+                                </option>
+                              );
+                            })}
+                          </select>
 
-                        <select
-                          className="reg-select-main ml-[12px]"
-                          style={{ backgroundImage: `url(${menuImg})` }}
-                        >
-                          {options}
-                        </select>
+                          <select
+                            className="reg-select-main ml-[12px]"
+                            style={{ backgroundImage: `url(${menuImg})` }}
+                          >
+                            {monthNameData.map((item, index) => {
+                              return (
+                                <option key={index} value={item.monthName}>
+                                  {item.monthName}
+                                </option>
+                              );
+                            })}
+                          </select>
+
+                          <select
+                            className="reg-select-main ml-[12px]"
+                            style={{ backgroundImage: `url(${menuImg})` }}
+                          >
+                            {options}
+                          </select>
+                        </span>
+                      </span>
+                    </div>
+                    <div className="reg-dateOfBirth-container mt-[10px] relative">
+                      <div className="reg-dateOfBirth-text">
+                        Gender
+                        <a href="/" className="reg-questionIcon-container">
+                          <i
+                            className="reg-questionIcon"
+                            style={{
+                              backgroundImage: `url(${img})`,
+                            }}
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <span className="reg-gender-container">
+                      <span
+                        className="reg-gender-map"
+                        onClick={() => setGender({ selected: "Male" })}
+                      >
+                        <label className="reg-label">Male</label>
+                        <input
+                          checked={gender.selected === "Male"}
+                          className="reg-input-radio"
+                          type="radio"
+                          value="Male"
+                          name="Male"
+                        />
+                      </span>
+
+                      <span
+                        className="reg-gender-map"
+                        onClick={() => setGender({ selected: "Female" })}
+                      >
+                        <label className="reg-label">Female</label>
+                        <input
+                          checked={gender.selected === "Female"}
+                          className="reg-input-radio"
+                          type="radio"
+                          value="Female"
+                          name="Female"
+                        />
+                      </span>
+
+                      <span
+                        className="reg-gender-map"
+                        onClick={() => setGender({ selected: "Custom" })}
+                      >
+                        <label className="reg-label">Custom</label>
+                        <input
+                          checked={gender.selected === "Custom"}
+                          className="reg-input-radio"
+                          type="radio"
+                          value="Custom"
+                          name="Custom"
+                        />
                       </span>
                     </span>
-                  </div>
-                  <div className="reg-dateOfBirth-container mt-[10px] relative">
-                    <div className="reg-dateOfBirth-text">
-                      Gender
-                      <a href="/" className="reg-questionIcon-container">
-                        <i
-                          className="reg-questionIcon"
-                          style={{
-                            backgroundImage: `url(${img})`,
-                          }}
-                        ></i>
+
+                    {gender.selected === "Custom" && (
+                      <div className="reg-optionalGender-input-container">
+                        <div className="reg-optionalGender-input-content">
+                          <div>
+                            <div>
+                              <TextInput
+                                type="text"
+                                className="reg-optionalGender-input"
+                                placeholder="Gender (optional)"
+                                name="Gender (optional)"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="info-text-container">
+                      <p className="info-text">
+                        People who use our service may have uploaded your
+                        contact information to Facebook.{" "}
+                        <a href="/reg" className="reg-useable-text">
+                          Learn more.
+                        </a>
+                      </p>
+                    </div>
+
+                    <div className="by-clicking-container">
+                      <p className="by-clicking-text">
+                        By clicking Sign Up, you agree to our{" "}
+                        <a href="#reg" className="reg-useable-text">
+                          Terms,{" "}
+                        </a>{" "}
+                        <a href="#reg" className="reg-useable-text">
+                          Privacy Policy{" "}
+                        </a>{" "}
+                        and{" "}
+                        <a href="#reg" className="reg-useable-text">
+                          Cookies Policy.{" "}
+                        </a>{" "}
+                        You may receive SMS notifications from us and can opt
+                        out at any time.
+                      </p>
+                    </div>
+
+                    <div className="reg-button-container">
+                      <button className="reg-button">Sign Up</button>
+                    </div>
+
+                    <div className="reg-already-account">
+                      <a href="#reg" className="reg-already-account-text">
+                        Already have an account?
                       </a>
                     </div>
-                  </div>
-
-                  <span className="reg-gender-container">
-                    <span className="reg-gender-map">
-                      <label
-                        className="reg-label"
-                        onChange={(e: any) => setGender(e.target.value)}
-                      >
-                        Male
-                      </label>
-                      <input
-                        className="reg-input-radio"
-                        type="radio"
-                        value={gender as string}
-                        name="Male"
-                      />
-                    </span>
-
-                    <span className="reg-gender-map">
-                      <label
-                        className="reg-label"
-                        onChange={(e: any) => setGender(e.target.value)}
-                      >
-                        Female
-                      </label>
-                      <input
-                        className="reg-input-radio"
-                        type="radio"
-                        value={gender as string}
-                        name="Female"
-                      />
-                    </span>
-
-                    <span className="reg-gender-map">
-                      <label
-                        className="reg-label"
-                        onChange={(e: any) => setGender(e.target.value)}
-                      >
-                        Custom
-                      </label>
-                      <input
-                        className="reg-input-radio"
-                        type="radio"
-                        value={gender as string}
-                        name="Custom"
-                      />
-                    </span>
-                  </span>
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <Footer navigate={navigate} />
+    </>
   );
 };
 
