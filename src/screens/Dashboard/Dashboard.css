@@ -106,8 +106,12 @@
   @apply text-[#1877f2] text-[14px] font-[500] hover:border-b border-[#1877f2];
 }
 
+.divider-container {
+  @apply bg-[#dadde1];
+}
+
 .divider {
-  @apply border-b-[1px] border-[#dadde1] mt-[20px] mb-[20px];
+  @apply border-b-[1px] w-11/12 border-[#dadde1] mt-[20px] mb-[20px];
 }
 
 .create-acc-button-container {

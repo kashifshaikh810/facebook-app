@@ -5,6 +5,7 @@ import TextInput from "../../components/TextInput/TextInput";
 import myPlus from "../../components/images/plus.png";
 
 import "./Dashboard.css";
+import Modal from "../../components/Modal/Modal";
 
 const dummyData = [
   {
@@ -34,6 +35,7 @@ const DashboardMarkup = (props: IProps) => {
 
   return (
     <div>
+      {/* <Modal text="modal" /> */}
       <div className="container">
         <div className={`content ${maxWidth > 1029 ? "ml-24" : "ml-0"}`}>
           <div className="block-one">
@@ -156,7 +158,9 @@ const DashboardMarkup = (props: IProps) => {
                   </a>
                 </div>
 
-                <div className="divider" />
+                <div className="divider-container">
+                  <div className="divider" />
+                </div>
 
                 <div className="create-acc-button-container">
                   <button className="create-acc-button">
