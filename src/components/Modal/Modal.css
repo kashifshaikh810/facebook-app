@@ -24,7 +24,6 @@
 }
 
 .sign-up-modal-main {
-  display: table-cell;
   text-align: center;
   vertical-align: middle;
   width: 100%;
@@ -32,7 +31,7 @@
 
 .sign-up-modal {
   display: inline-block;
-  margin: 20px;
+  margin: 35px;
   position: relative;
   text-align: left;
 }
@@ -42,4 +41,94 @@
   overflow: visible;
   padding: 0;
   width: 432px;
+  height: 550px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  @apply bg-white rounded-[8px];
+}
+
+.close-image {
+  @apply absolute right-[10px] top-[12px] z-[2];
+}
+
+.signup-heading-container {
+  padding: 10px 16px;
+  border-radius: 8px 8px 0 0;
+  @apply bg-[#fff] mt-[0px] pt-[10px] box-border relative w-[432px] z-[1];
+}
+
+.signup-heading-text {
+  font-family: Helvetica, Arial, sans-serif;
+  @apply text-[#1c1e21] text-[32px] leading-[38px] mb-[0px] font-[600];
+}
+
+.easy-heading-text {
+  font-family: Helvetica, Arial, sans-serif;
+  @apply mb-[0px] text-[#606770] text-[15px] leading-[24px] font-normal;
+}
+
+.signup-content-container {
+  margin: 0 auto 0 auto;
+  @apply pb-[0px];
+}
+
+.signup-content {
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid #dadde1;
+  @apply bg-[#fff] box-border p-[16px] relative w-[432px];
+}
+
+.signup-modal-form {
+  @apply m-[0px] p-[0px];
+}
+
+.fullName-fieldChild {
+  @apply w-[399px];
+}
+
+.fistName-inputField-container {
+  @apply mb-[10px] mr-[8px] float-left inline-block;
+}
+
+.firstName-inputField-container-child {
+  @apply w-[194px] bg-[#fff] inline-block relative;
+}
+
+.firstName-inputField {
+  @apply w-[194px] placeholder:text-[#8d949e] font-[400] border-[1px] text-[15px] leading-[16px] border-[#ccd0d5] p-[11px] rounded-[4px] focus:outline-none bg-[#f5f6f7];
+}
+
+.signup-mobileNumber-input-container {
+  @apply relative inline-block w-[399px] mb-[10px] text-[15px] leading-[16px];
+}
+
+.signup-mobileNumber-input {
+  @apply w-full placeholder:text-[#8d949e] font-[400] border-[1px] text-[15px] leading-[16px] border-[#ccd0d5] p-[11px] rounded-[5px] focus:outline-none bg-[#f5f6f7];
+}
+
+.signup-newPassword-input-container {
+  @apply relative inline-block w-[399px] mb-[10px] text-[15px] leading-[16px];
+}
+
+.signup-newPassword-input {
+  @apply w-full placeholder:text-[#8d949e] font-[400] border-[1px] text-[15px] leading-[16px] border-[#ccd0d5] p-[11px] rounded-[5px] focus:outline-none bg-[#f5f6f7];
+}
+
+.signup-dateOfBirth-container {
+  @apply w-full relative;
+}
+
+.signup-dateOfBirth-text {
+  @apply mb-[4px] float-left text-[#606770] text-[12px] leading-[20px] mt-[2px] font-[500] w-full text-left;
+}
+
+.signup-questionIcon-container {
+  @apply text-inherit leading-[12px] ml-[4px] w-[150px];
+}
+
+.signup-questionIcon {
+  background-position: 0px -60px;
+  background-size: 22px 73px;
+  background-repeat: no-repeat;
+  line-height: 12px;
+  @apply w-[12px] h-[12px] inline-block text-inherit;
 }
