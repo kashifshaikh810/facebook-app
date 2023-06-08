@@ -11,7 +11,7 @@ const dummyData = [
   {
     id: 0,
     profileImg:
-      "https://scontent.fkhi2-2.fna.fbcdn.net/v/t39.30808-1/347374312_1188554068457778_8034793456633306027_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=6aEu06RILuAAX929zFb&_nc_ht=scontent.fkhi2-2.fna&oh=00_AfBd-amFNBVJszgwZodz0VinbhWrlzmTJblC50T7i0-T-g&oe=6475094E",
+      "https://scontent.fkhi2-2.fna.fbcdn.net/v/t39.30808-1/347374312_1188554068457778_8034793456633306027_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=WFa_aF3SmdYAX9zDrQC&_nc_ht=scontent.fkhi2-2.fna&oh=00_AfBgQGh_dKqsmDBhJ_VMWj3C5QXT876nGKL9ju8B75FOAA&oe=6486D58E",
     firstName: "Muhammad",
     notificationNum: 3,
   },
