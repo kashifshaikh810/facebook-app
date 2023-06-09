@@ -204,20 +204,6 @@ const SignUp = () => {
                     <span className="reg-gender-container">
                       <span
                         className="reg-gender-map"
-                        onClick={() => setGender({ selected: "Male" })}
-                      >
-                        <label className="reg-label">Male</label>
-                        <input
-                          checked={gender.selected === "Male"}
-                          className="reg-input-radio"
-                          type="radio"
-                          value="Male"
-                          name="Male"
-                        />
-                      </span>
-
-                      <span
-                        className="reg-gender-map"
                         onClick={() => setGender({ selected: "Female" })}
                       >
                         <label className="reg-label">Female</label>
@@ -227,6 +213,20 @@ const SignUp = () => {
                           type="radio"
                           value="Female"
                           name="Female"
+                        />
+                      </span>
+
+                      <span
+                        className="reg-gender-map"
+                        onClick={() => setGender({ selected: "Male" })}
+                      >
+                        <label className="reg-label">Male</label>
+                        <input
+                          checked={gender.selected === "Male"}
+                          className="reg-input-radio"
+                          type="radio"
+                          value="Male"
+                          name="Male"
                         />
                       </span>
 
