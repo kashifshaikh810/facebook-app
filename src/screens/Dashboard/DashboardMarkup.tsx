@@ -30,10 +30,13 @@ interface IProps {
   navigate: Function;
   isShowSignUpModal: boolean;
   setIsShowSignUpModal: Function;
+  gender: any;
+  setGender: Function;
 }
 
 const DashboardMarkup = (props: IProps) => {
-  const { isShowCloseIcon, setIsShowCloseIcon, maxWidth } = props;
+  const { isShowCloseIcon, setIsShowCloseIcon, maxWidth, gender, setGender } =
+    props;
 
   return (
     <div>
@@ -42,6 +45,8 @@ const DashboardMarkup = (props: IProps) => {
         isShowAddAccountModal={false}
         isShowExistAccountModal={false}
         setIsShowSignUpModal={props.setIsShowSignUpModal}
+        gender={gender}
+        setGender={setGender}
       />
       <div className="container">
         <div className={`content ${maxWidth > 1029 ? "ml-24" : "ml-0"}`}>

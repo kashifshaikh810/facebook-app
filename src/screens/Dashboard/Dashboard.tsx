@@ -11,6 +11,7 @@ interface IState {
 const Dashboard = () => {
   const [isShowCloseIcon, setIsShowCloseIcon] = useState<IState>();
   const [isShowSignUpModal, setIsShowSignUpModal] = useState<boolean>(false);
+  const [gender, setGender] = useState<any | null>({ selected: "" });
 
   const navigate = useNavigate();
 
@@ -43,6 +44,8 @@ const Dashboard = () => {
       navigate={navigate}
       isShowSignUpModal={isShowSignUpModal}
       setIsShowSignUpModal={setIsShowSignUpModal}
+      gender={gender}
+      setGender={setGender}
     />
   );
 };

@@ -27,11 +27,12 @@
   text-align: center;
   vertical-align: middle;
   width: 100%;
+  overflow-y: scroll;
 }
 
 .sign-up-modal {
   display: inline-block;
-  margin: 35px;
+  margin: 20px;
   position: relative;
   text-align: left;
 }
@@ -131,4 +132,102 @@
   background-repeat: no-repeat;
   line-height: 12px;
   @apply w-[12px] h-[12px] inline-block text-inherit;
+}
+
+.signup-select-container {
+  @apply relative text-left;
+}
+
+.signup-select-content {
+  @apply inline-block;
+}
+
+.signup-select-main {
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  background-position: right 5px center;
+  background-size: 14px;
+  padding: 0px 8px;
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  @apply rounded-[4px] text-[#1c1e21] text-[15px] font-normal h-[36px] leading-[20px] w-[125px] bg-[#fff] border-[1px] border-[#ccd0d5] focus:outline-none;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.signup-dateOfBirth-container {
+  @apply w-full relative;
+}
+
+.signup-dateOfBirth-text {
+  @apply mb-[4px] float-left text-[#606770] text-[12px] leading-[20px] mt-[2px] font-[500] w-full text-left;
+}
+
+.signup-questionIcon-container {
+  @apply text-inherit leading-[12px] ml-[4px] w-[150px];
+}
+
+.signup-questionIcon {
+  background-position: 0px -60px;
+  background-size: 22px 73px;
+  background-repeat: no-repeat;
+  line-height: 12px;
+  @apply w-[12px] h-[12px] inline-block text-inherit;
+}
+
+.signup-gender-container {
+  margin: -8px -6px -6px;
+  @apply flex flex-wrap w-[411px];
+}
+
+.signup-gender-map {
+  flex: 1 0 auto;
+  margin: 0px 6px 0px;
+  @apply bg-white border-[1px] border-[#ccd0d5] box-border inline-block font-normal h-[36px] p-[0] relative w-auto rounded-[4px];
+}
+
+.signup-label {
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  line-height: 36px;
+  padding: 0px 55px 0px 9px;
+  @apply box-border inline-block text-[15px] w-[100%] font-normal text-[#1c1e21];
+}
+
+.signup-input-radio {
+  @apply h-[36px] m-[0px] absolute right-[10px] top-[0px] text-[15px] bg-white text-[#1c1e21] font-normal;
+}
+
+.signup-optionalGender-input-container {
+  @apply flex flex-wrap w-[411px] mt-[10px];
+}
+
+.signup-optionalGender-input-content {
+  @apply relative inline-block w-[399px] mb-[10px] mt-[10px] text-[15px] leading-[16px];
+}
+
+.signup-optionalGender-input {
+  @apply w-full placeholder:text-[#8d949e] font-[400] border-[1px] text-[15px] leading-[16px] border-[#ccd0d5] p-[11px] rounded-[5px] focus:outline-none bg-[#f5f6f7];
+}
+
+.signup-info-text-container {
+  @apply flex flex-wrap w-[399px];
+}
+
+.signup-info-text {
+  @apply w-auto text-[#777] text-[11px] text-left;
+}
+
+.signup-useable-text {
+  text-decoration: none;
+  @apply text-[#385898] cursor-pointer hover:border-b-[1px] border-[#385898];
+}
+
+.signup-by-clicking-container {
+  @apply w-[399px];
+}
+
+.signup-by-clicking-text {
+  @apply w-auto text-[#777] text-[11px] mt-[10px] text-left;
 }
