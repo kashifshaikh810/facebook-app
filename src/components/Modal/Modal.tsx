@@ -4,6 +4,7 @@ import "./Modal.css";
 interface Props {
   isShowSignUpModal?: boolean;
   isShowAddAccountModal?: boolean;
+  setIsShowAddAccountModal: Function;
   isShowExistAccountModal?: boolean;
   setIsShowSignUpModal: Function;
   gender: any;
@@ -346,8 +347,268 @@ const renderSignUpModal = (props: Props) => {
 const renderAddAccountModal = (props: Props) => {
   if (props.isShowAddAccountModal) {
     return (
-      <div>
-        <p>hello form add account modal</p>
+      <div className="addAccount-modal-container">
+        <div className="addAccount-modal-content">
+          <div className="addAccount-modal-main">
+            <div className="addAccount-modal">
+              <div className="addAccount-modal-area">
+                <img
+                  src="https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/11W0xEwKS62.png"
+                  alt="close"
+                  className="close-image"
+                  width="24"
+                  height="24"
+                  onClick={(e: any) => props.setIsShowAddAccountModal(false)}
+                />
+                <div className="signup-heading-container">
+                  <div className="signup-heading-text">add account modal</div>
+                  <div className="easy-heading-text">It's quick and easy.</div>
+                </div>
+
+                <div className="signup-content-container">
+                  <div>
+                    <div className="signup-content">
+                      <form action="#" className="signup-modal-form">
+                        <div className="signup-form-child">
+                          <div className="fullName-field">
+                            <div className="fullName-fieldChild">
+                              <div className="fistName-inputField-container">
+                                <div>
+                                  <div className="firstName-inputField-container-child">
+                                    <TextInput
+                                      type="text"
+                                      className="firstName-inputField"
+                                      placeholder="First name"
+                                      name="First name"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="surname-inputField-container">
+                                <div>
+                                  <div className="firstName-inputField-container-child">
+                                    <TextInput
+                                      type="text"
+                                      className="firstName-inputField"
+                                      placeholder="Surname"
+                                      name="Surname"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="signup-mobileNumber-input-container">
+                            <div>
+                              <div>
+                                <TextInput
+                                  type="email"
+                                  className="signup-mobileNumber-input"
+                                  placeholder="Mobile number email address"
+                                  name="Mobile number email address"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div className="signup-newPassword-input-container">
+                            <div>
+                              <div>
+                                <TextInput
+                                  type="password"
+                                  className="signup-newPassword-input"
+                                  placeholder="New password"
+                                  name="New password"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div className="signup-dateOfBirth-container">
+                            <div className="signup-dateOfBirth-text">
+                              Date of birth
+                              <a
+                                href="/"
+                                className="signup-questionIcon-container"
+                              >
+                                <i
+                                  className="signup-questionIcon"
+                                  style={{
+                                    backgroundImage: `url(${img})`,
+                                  }}
+                                ></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div className="signup-select-container">
+                            <span className="signup-select-content">
+                              <span>
+                                <select
+                                  className="signup-select-main"
+                                  style={{ backgroundImage: `url(${menuImg})` }}
+                                >
+                                  {numbersData.map((item, index) => {
+                                    return (
+                                      <option key={index} value={item.number}>
+                                        {item.number}
+                                      </option>
+                                    );
+                                  })}
+                                </select>
+
+                                <select
+                                  className="signup-select-main ml-[12px]"
+                                  style={{ backgroundImage: `url(${menuImg})` }}
+                                >
+                                  {monthNameData.map((item, index) => {
+                                    return (
+                                      <option
+                                        key={index}
+                                        value={item.monthName}
+                                      >
+                                        {item.monthName}
+                                      </option>
+                                    );
+                                  })}
+                                </select>
+
+                                <select
+                                  className="signup-select-main ml-[12px]"
+                                  style={{ backgroundImage: `url(${menuImg})` }}
+                                >
+                                  {options}
+                                </select>
+                              </span>
+                            </span>
+                          </div>
+                          <div className="signup-dateOfBirth-container mt-[10px] relative">
+                            <div className="signup-dateOfBirth-text">
+                              Gender
+                              <a
+                                href="/"
+                                className="signup-questionIcon-container"
+                              >
+                                <i
+                                  className="signup-questionIcon"
+                                  style={{
+                                    backgroundImage: `url(${img})`,
+                                  }}
+                                ></i>
+                              </a>
+                            </div>
+                          </div>
+
+                          <span className="signup-gender-container">
+                            <span
+                              className="signup-gender-map"
+                              onClick={() =>
+                                props.setGender({ selected: "Female" })
+                              }
+                            >
+                              <label className="signup-label">Female</label>
+                              <input
+                                checked={props.gender.selected === "Female"}
+                                className="signup-input-radio"
+                                type="radio"
+                                value="Female"
+                                name="Female"
+                              />
+                            </span>
+
+                            <span
+                              className="signup-gender-map"
+                              onClick={() =>
+                                props.setGender({ selected: "Male" })
+                              }
+                            >
+                              <label className="signup-label">Male</label>
+                              <input
+                                checked={props.gender.selected === "Male"}
+                                className="signup-input-radio"
+                                type="radio"
+                                value="Male"
+                                name="Male"
+                              />
+                            </span>
+
+                            <span
+                              className="signup-gender-map"
+                              onClick={() =>
+                                props.setGender({ selected: "Custom" })
+                              }
+                            >
+                              <label className="signup-label">Custom</label>
+                              <input
+                                checked={props.gender.selected === "Custom"}
+                                className="signup-input-radio"
+                                type="radio"
+                                value="Custom"
+                                name="Custom"
+                              />
+                            </span>
+                          </span>
+
+                          {props.gender.selected === "Custom" && (
+                            <div className="signup-optionalGender-input-container">
+                              <div className="signup-optionalGender-input-content">
+                                <div>
+                                  <div>
+                                    <TextInput
+                                      type="text"
+                                      className="signup-optionalGender-input"
+                                      placeholder="Gender (optional)"
+                                      name="Gender (optional)"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          )}
+
+                          <div className="signup-info-text-container">
+                            <p
+                              className={`signup-info-text ${
+                                props.gender.selected === "Custom"
+                                  ? ``
+                                  : `mt-[15px]`
+                              }`}
+                            >
+                              People who use our service may have uploaded your
+                              contact information to Facebook.{" "}
+                              <a href="/" className="signup-useable-text">
+                                Learn more.
+                              </a>
+                            </p>
+                          </div>
+
+                          <div className="signup-by-clicking-container">
+                            <p className="signup-by-clicking-text">
+                              By clicking Sign Up, you agree to our{" "}
+                              <a href="/" className="signup-useable-text">
+                                Terms,{" "}
+                              </a>{" "}
+                              <a href="/" className="signup-useable-text">
+                                Privacy Policy{" "}
+                              </a>{" "}
+                              and{" "}
+                              <a href="/" className="signup-useable-text">
+                                Cookies Policy.{" "}
+                              </a>{" "}
+                              You may receive SMS notifications from us and can
+                              opt out at any time.
+                            </p>
+                          </div>
+
+                          <div className="reg-button-container">
+                            <button className="reg-button">Sign Up</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

@@ -32,21 +32,31 @@ interface IProps {
   setIsShowSignUpModal: Function;
   gender: any;
   setGender: Function;
+  isShowAddAccountModal: boolean;
+  setIsShowAddAccountModal: Function;
 }
 
 const DashboardMarkup = (props: IProps) => {
-  const { isShowCloseIcon, setIsShowCloseIcon, maxWidth, gender, setGender } =
-    props;
+  const {
+    isShowCloseIcon,
+    setIsShowCloseIcon,
+    maxWidth,
+    gender,
+    setGender,
+    isShowAddAccountModal,
+    setIsShowAddAccountModal,
+  } = props;
 
   return (
     <div>
       <Modal
         isShowSignUpModal={props.isShowSignUpModal}
-        isShowAddAccountModal={false}
         isShowExistAccountModal={false}
         setIsShowSignUpModal={props.setIsShowSignUpModal}
         gender={gender}
         setGender={setGender}
+        isShowAddAccountModal={isShowAddAccountModal}
+        setIsShowAddAccountModal={setIsShowAddAccountModal}
       />
       <div className="container">
         <div className={`content ${maxWidth > 1029 ? "ml-24" : "ml-0"}`}>
@@ -67,6 +77,11 @@ const DashboardMarkup = (props: IProps) => {
                 return (
                   <div
                     key={i}
+                    onClick={(e: any) =>
+                      item.firstName === "Add Account"
+                        ? setIsShowAddAccountModal(true)
+                        : ""
+                    }
                     className={`map-container transition duration-700 ease-out ${
                       i >= 1 ? "ml-4" : ""
                     } ${
