@@ -1,3 +1,5 @@
+/* This is signup modal css */
+
 .sign-up-modal-container {
   background: transparent;
   left: 0;
@@ -44,7 +46,7 @@
   width: 432px;
   height: 550px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-  @apply bg-white rounded-[8px];
+  @apply bg-white rounded-[3px];
 }
 
 .close-image {
@@ -231,3 +233,127 @@ select {
 .signup-by-clicking-text {
   @apply w-auto text-[#777] text-[11px] mt-[10px] text-left;
 }
+
+/* End signup modal css */
+
+/* This is add account modal css */
+
+.addAccount-modal-container {
+  background: transparent;
+  left: 0;
+  min-height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 400;
+  display: table;
+  height: 100% !important;
+  table-layout: fixed;
+  width: 100%;
+  outline: none;
+  @apply opacity-[1] min-w-[472px] pt-[25px];
+}
+
+.addAccount-modal-content {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  @apply bg-[#00000066];
+}
+
+.addAccount-modal-main {
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.addAccount-modal {
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  text-align: left;
+}
+
+.addAccount-modal-area {
+  background-color: transparent;
+  overflow: visible;
+  padding: 0;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  @apply bg-white rounded-[3px];
+}
+
+.addAccount-close-container {
+  margin: 10px 16px 12px 36px !important;
+  @apply float-right mt-[-4px] text-right;
+}
+
+.addAccount-close-content {
+  @apply bg-[#ebedf0] rounded-[50%] w-[36px] h-[36px] text-center;
+}
+
+.addAccount-close {
+  background-position: 0 -43px;
+  background-size: 43px 77px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.addAccount-heading-container {
+  border-radius: 3px 3px 0 0;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  @apply bg-[#fff] mt-[0px] pt-[20px] pl-[70px] pb-[20px] box-border w-[370px] text-center;
+}
+
+.addAccount-content-container {
+  margin: 0 auto 0 auto;
+  @apply pb-[0px];
+}
+
+.addAccount-content {
+  border-radius: 0 0 3px 3px;
+  border-top: 1px solid #dadde1;
+  @apply bg-[#fff] box-border p-[16px] relative w-[399px];
+}
+
+.addAccount-modal-form {
+  @apply m-[0px] p-[0px];
+}
+
+.addAccount-mobileNumber-input-container {
+  @apply relative inline-block w-[370px] mb-[10px] text-[15px] leading-[16px];
+}
+
+.addAccount-mobileNumber-input {
+  padding: 14px 16px !important;
+  @apply w-[370px] placeholder:text-[#8d949e] font-[500] border-[1px] text-[17px] leading-[16px] border-[#ccd0d5] p-[11px] rounded-[5px] focus:outline-none;
+}
+
+.addAccount-newPassword-input-container {
+  @apply relative inline-block w-[370px] mb-[10px] text-[15px] leading-[16px];
+}
+
+.addAccount-newPassword-input {
+  padding: 14px 16px !important;
+  @apply w-[370px] placeholder:text-[#8d949e] font-[500] border-[1px] text-[17px] leading-[16px] border-[#ccd0d5] p-[11px] rounded-[5px] focus:outline-none;
+}
+
+.addAccount-remember-container {
+  padding: 6px 0 16px;
+}
+
+/* End add account css */
