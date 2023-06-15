@@ -34,6 +34,10 @@ interface IProps {
   setGender: Function;
   isShowAddAccountModal: boolean;
   setIsShowAddAccountModal: Function;
+  isShowRememberPassword: boolean;
+  setIsShowRememberPassword: Function;
+  isPasswordRememberOrNot: boolean;
+  setIsPasswordRememberOrNot: Function;
 }
 
 const DashboardMarkup = (props: IProps) => {
@@ -45,6 +49,10 @@ const DashboardMarkup = (props: IProps) => {
     setGender,
     isShowAddAccountModal,
     setIsShowAddAccountModal,
+    isShowRememberPassword,
+    setIsShowRememberPassword,
+    isPasswordRememberOrNot,
+    setIsPasswordRememberOrNot,
   } = props;
 
   return (
@@ -57,6 +65,10 @@ const DashboardMarkup = (props: IProps) => {
         setGender={setGender}
         isShowAddAccountModal={isShowAddAccountModal}
         setIsShowAddAccountModal={setIsShowAddAccountModal}
+        isShowRememberPassword={isShowRememberPassword}
+        setIsShowRememberPassword={setIsShowRememberPassword}
+        isPasswordRememberOrNot={isPasswordRememberOrNot}
+        setIsPasswordRememberOrNot={setIsPasswordRememberOrNot}
       />
       <div className="container">
         <div className={`content ${maxWidth > 1029 ? "ml-24" : "ml-0"}`}>

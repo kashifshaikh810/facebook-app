@@ -9,6 +9,10 @@ interface Props {
   setIsShowSignUpModal: Function;
   gender: any;
   setGender: Function;
+  isShowRememberPassword: boolean;
+  setIsShowRememberPassword: Function;
+  isPasswordRememberOrNot: boolean;
+  setIsPasswordRememberOrNot: Function;
 }
 
 const img = "https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/iE9yyunejFh.png";
@@ -391,19 +395,67 @@ const renderAddAccountModal = (props: Props) => {
                                 <TextInput
                                   type="password"
                                   className="addAccount-newPassword-input"
-                                  placeholder="New password"
-                                  name="New password"
+                                  placeholder="Password"
+                                  name="Password"
                                 />
                               </div>
                             </div>
                           </div>
 
                           <div className="addAccount-remember-container">
-                            <label htmlFor="/">d</label>
+                            <label
+                              className="addAccount-remember-content"
+                              onClick={(e: any) =>
+                                props.setIsPasswordRememberOrNot(
+                                  !props.isPasswordRememberOrNot
+                                )
+                              }
+                              onMouseEnter={(e: any) =>
+                                props.setIsShowRememberPassword(true)
+                              }
+                              onMouseOut={(e: any) =>
+                                props.setIsShowRememberPassword(false)
+                              }
+                            >
+                              <span
+                                onMouseEnter={(e: any) =>
+                                  props.setIsShowRememberPassword(true)
+                                }
+                                onMouseOut={(e: any) =>
+                                  props.setIsShowRememberPassword(false)
+                                }
+                                className={`checkbox-before ${
+                                  props.isPasswordRememberOrNot
+                                    ? `bg-[#1877f2]`
+                                    : ``
+                                } ${
+                                  !props.isPasswordRememberOrNot
+                                    ? props.isShowRememberPassword
+                                      ? `bg-gray-100`
+                                      : ``
+                                    : ``
+                                }`}
+                              >
+                                {props.isPasswordRememberOrNot && (
+                                  <span className="checkbox-after"></span>
+                                )}
+                              </span>
+                              <div className="addAccount-remember-text">
+                                Remember password
+                              </div>
+                            </label>
                           </div>
 
-                          <div className="reg-button-container">
-                            <button className="reg-button">Sign Up</button>
+                          <div className="addAccount-login-button-container">
+                            <button className="addAccount-login-button">
+                              Log in
+                            </button>
+                          </div>
+
+                          <div className="addAccount-forgot-text-container">
+                            <a href="/" className="addAccount-forgot-text">
+                              Forgotten password?
+                            </a>
                           </div>
                         </div>
                       </form>

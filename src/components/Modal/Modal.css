@@ -266,11 +266,11 @@ select {
 .addAccount-modal-main {
   text-align: center;
   vertical-align: middle;
+  height: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
   overflow-y: scroll;
 }
 
@@ -286,9 +286,9 @@ select {
   overflow: visible;
   padding: 0;
   width: 400px;
-  height: 400px;
+  height: 300px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-  @apply bg-white rounded-[3px];
+  @apply bg-white rounded-[8px];
 }
 
 .addAccount-close-container {
@@ -312,7 +312,7 @@ select {
 }
 
 .addAccount-heading-container {
-  border-radius: 3px 3px 0 0;
+  border-radius: 8px 8px 0 0;
   font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -325,7 +325,7 @@ select {
 }
 
 .addAccount-content {
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 8px 8px;
   border-top: 1px solid #dadde1;
   @apply bg-[#fff] box-border p-[16px] relative w-[399px];
 }
@@ -354,6 +354,83 @@ select {
 
 .addAccount-remember-container {
   padding: 6px 0 16px;
+}
+
+.addAccount-remember-content {
+  @apply cursor-pointer relative text-left flex flex-row items-center;
+}
+
+.checkbox-before {
+  @apply border-[1px] border-[#d7dade] rounded-[4px] w-[20px] h-[20px];
+}
+
+.checkbox-after {
+  border-width: 0 2px 2px 0;
+  height: 10px;
+  left: 7.5px;
+  top: 4.5px;
+  transform: rotate(45deg);
+  width: 5px;
+  display: block;
+  position: absolute;
+  @apply border-solid border-[#fff];
+}
+
+.addAccount-remember-text {
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 20px;
+  @apply pl-[12px] text-[#606770];
+}
+
+.addAccount-login-button-container {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  @apply mt-[6px] text-center;
+}
+
+.addAccount-login-button {
+  display: block;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 40px;
+  margin: 0 0 8px;
+  padding: 0 16px;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  font-size: 17px;
+  line-height: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1) background-color,
+    200ms cubic-bezier(0.08, 0.52, 0.52, 1) box-shadow,
+    200ms cubic-bezier(0.08, 0.52, 0.52, 1) transform;
+  @apply hover:bg-blue-600;
+}
+
+.addAccount-forgot-text-container {
+  @apply p-[10px] pr-[0px] text-center leading-[18px];
+}
+
+.addAccount-forgot-text {
+  color: #1877f2;
+  font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: normal;
+  cursor: pointer;
+  text-decoration: none;
+  @apply hover:border-b-[1.5px] hover:border-[#1877f2];
 }
 
 /* End add account css */
