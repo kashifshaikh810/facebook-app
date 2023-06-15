@@ -340,7 +340,7 @@ select {
 
 .addAccount-mobileNumber-input {
   padding: 14px 16px !important;
-  @apply w-[370px] placeholder:text-[#8d949e] font-[500] border-[1px] text-[17px] leading-[16px] border-[#ccd0d5] p-[11px] rounded-[5px] focus:outline-none;
+  @apply w-[370px] placeholder:text-[#8d949e] font-[500] border-[1px] text-[17px] leading-[16px] border-[#ccd0d5] focus:border-[#1877f2] focus:shadow-md p-[11px] rounded-[5px] focus:outline-none;
 }
 
 .addAccount-newPassword-input-container {
@@ -349,7 +349,7 @@ select {
 
 .addAccount-newPassword-input {
   padding: 14px 16px !important;
-  @apply w-[370px] placeholder:text-[#8d949e] font-[500] border-[1px] text-[17px] leading-[16px] border-[#ccd0d5] p-[11px] rounded-[5px] focus:outline-none;
+  @apply w-[370px] placeholder:text-[#8d949e] font-[500] border-[1px] text-[17px] leading-[16px] border-[#ccd0d5] focus:border-[#1877f2] focus:shadow-md p-[11px] rounded-[5px] focus:outline-none;
 }
 
 .addAccount-remember-container {
