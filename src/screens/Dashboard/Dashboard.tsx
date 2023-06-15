@@ -18,6 +18,8 @@ const Dashboard = () => {
     useState<boolean>(false);
   const [isPasswordRememberOrNot, setIsPasswordRememberOrNot] =
     useState<boolean>(false);
+  const [isShowExistAccountModal, setIsShowExistAccountModal] =
+    useState<boolean>(false);
 
   const navigate = useNavigate();
 
@@ -58,6 +60,8 @@ const Dashboard = () => {
       setIsShowRememberPassword={setIsShowRememberPassword}
       isPasswordRememberOrNot={isPasswordRememberOrNot}
       setIsPasswordRememberOrNot={setIsPasswordRememberOrNot}
+      isShowExistAccountModal={isShowExistAccountModal}
+      setIsShowExistAccountModal={setIsShowExistAccountModal}
     />
   );
 };

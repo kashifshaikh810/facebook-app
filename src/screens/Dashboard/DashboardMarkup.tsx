@@ -13,12 +13,14 @@ const dummyData = [
     profileImg:
       "https://scontent.fkhi2-2.fna.fbcdn.net/v/t39.30808-1/347374312_1188554068457778_8034793456633306027_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=WFa_aF3SmdYAX9zDrQC&_nc_ht=scontent.fkhi2-2.fna&oh=00_AfBgQGh_dKqsmDBhJ_VMWj3C5QXT876nGKL9ju8B75FOAA&oe=6486D58E",
     firstName: "Muhammad",
+    lastName: "Kashif",
     notificationNum: 3,
   },
   {
     id: 1,
     profileImg: "",
     firstName: "Add Account",
+    lastName: "",
     notificationNum: "",
   },
 ];
@@ -38,6 +40,8 @@ interface IProps {
   setIsShowRememberPassword: Function;
   isPasswordRememberOrNot: boolean;
   setIsPasswordRememberOrNot: Function;
+  isShowExistAccountModal: boolean;
+  setIsShowExistAccountModal: Function;
 }
 
 const DashboardMarkup = (props: IProps) => {
@@ -53,13 +57,14 @@ const DashboardMarkup = (props: IProps) => {
     setIsShowRememberPassword,
     isPasswordRememberOrNot,
     setIsPasswordRememberOrNot,
+    isShowExistAccountModal,
+    setIsShowExistAccountModal,
   } = props;
 
   return (
     <div>
       <Modal
         isShowSignUpModal={props.isShowSignUpModal}
-        isShowExistAccountModal={false}
         setIsShowSignUpModal={props.setIsShowSignUpModal}
         gender={gender}
         setGender={setGender}
@@ -69,6 +74,8 @@ const DashboardMarkup = (props: IProps) => {
         setIsShowRememberPassword={setIsShowRememberPassword}
         isPasswordRememberOrNot={isPasswordRememberOrNot}
         setIsPasswordRememberOrNot={setIsPasswordRememberOrNot}
+        isShowExistAccountModal={isShowExistAccountModal}
+        setIsShowExistAccountModal={setIsShowExistAccountModal}
       />
       <div className="container">
         <div className={`content ${maxWidth > 1029 ? "ml-24" : "ml-0"}`}>
@@ -92,7 +99,7 @@ const DashboardMarkup = (props: IProps) => {
                     onClick={(e: any) =>
                       item.firstName === "Add Account"
                         ? setIsShowAddAccountModal(true)
-                        : ""
+                        : setIsShowExistAccountModal(true)
                     }
                     className={`map-container transition duration-700 ease-out ${
                       i >= 1 ? "ml-4" : ""

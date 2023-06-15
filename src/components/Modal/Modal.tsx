@@ -5,7 +5,6 @@ interface Props {
   isShowSignUpModal?: boolean;
   isShowAddAccountModal?: boolean;
   setIsShowAddAccountModal: Function;
-  isShowExistAccountModal?: boolean;
   setIsShowSignUpModal: Function;
   gender: any;
   setGender: Function;
@@ -13,6 +12,8 @@ interface Props {
   setIsShowRememberPassword: Function;
   isPasswordRememberOrNot: boolean;
   setIsPasswordRememberOrNot: Function;
+  isShowExistAccountModal: boolean;
+  setIsShowExistAccountModal: Function;
 }
 
 const img = "https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/iE9yyunejFh.png";
@@ -474,8 +475,121 @@ const renderAddAccountModal = (props: Props) => {
 const renderExistAccountModal = (props: Props) => {
   if (props.isShowExistAccountModal) {
     return (
-      <div>
-        <p>hello form exist account modal</p>
+      <div className="existAccount-modal-container">
+        <div className="existAccount-modal-content">
+          <div className="existAccount-modal-main">
+            <div className="existAccount-modal">
+              <div className="existAccount-modal-area">
+                <div className="existAccount-close-container">
+                  <div
+                    className="existAccount-close-content"
+                    onClick={(e: any) =>
+                      props.setIsShowExistAccountModal(false)
+                    }
+                  >
+                    <i
+                      className="existAccount-close"
+                      style={{ backgroundImage: `url(${closeImg})` }}
+                    />
+                  </div>
+                </div>
+
+                <div className="existAccount-content-container">
+                  <div>
+                    <div className="existAccount-content">
+                      <img
+                        src="https://scontent.fkhi2-2.fna.fbcdn.net/v/t39.30808-1/347374312_1188554068457778_8034793456633306027_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=rKWrX07pE8EAX-T1C-6&_nc_ht=scontent.fkhi2-2.fna&oh=00_AfDotJBLSxml5vIdrY6w1Yz24JNbuxfykyqlUYMnZasOqQ&oe=6490B8CE"
+                        alt="prof"
+                        className="existAccount-profImg"
+                      />
+                      <form action="#" className="existAccount-modal-form">
+                        <div className="existAccount-form-child">
+                          <div className="existAccount-profileName-container">
+                            <div>
+                              <div>
+                                <div className="existAccount-profileName">
+                                  Muhammad Kashif
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="existAccount-newPassword-input-container">
+                            <div>
+                              <div>
+                                <TextInput
+                                  type="password"
+                                  className="existAccount-newPassword-input"
+                                  placeholder="Password"
+                                  name="Password"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="existAccount-remember-container">
+                            <label
+                              className="existAccount-remember-content"
+                              onClick={(e: any) =>
+                                props.setIsPasswordRememberOrNot(
+                                  !props.isPasswordRememberOrNot
+                                )
+                              }
+                              onMouseEnter={(e: any) =>
+                                props.setIsShowRememberPassword(true)
+                              }
+                              onMouseOut={(e: any) =>
+                                props.setIsShowRememberPassword(false)
+                              }
+                            >
+                              <span
+                                onMouseEnter={(e: any) =>
+                                  props.setIsShowRememberPassword(true)
+                                }
+                                onMouseOut={(e: any) =>
+                                  props.setIsShowRememberPassword(false)
+                                }
+                                className={`existAccount-checkbox-before ${
+                                  props.isPasswordRememberOrNot
+                                    ? `bg-[#1877f2]`
+                                    : ``
+                                } ${
+                                  !props.isPasswordRememberOrNot
+                                    ? props.isShowRememberPassword
+                                      ? `bg-gray-100`
+                                      : ``
+                                    : ``
+                                }`}
+                              >
+                                {props.isPasswordRememberOrNot && (
+                                  <span className="existAccount-checkbox-after"></span>
+                                )}
+                              </span>
+                              <div className="existAccount-remember-text">
+                                Remember password
+                              </div>
+                            </label>
+                          </div>
+
+                          <div className="existAccount-login-button-container">
+                            <button className="existAccount-login-button">
+                              Log in
+                            </button>
+                          </div>
+
+                          <div className="existAccount-forgot-text-container">
+                            <a href="/" className="existAccount-forgot-text">
+                              Forgotten password?
+                            </a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

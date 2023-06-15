@@ -434,3 +434,212 @@ select {
 }
 
 /* End add account css */
+
+/* This is exist account modal css */
+
+.existAccount-modal-container {
+  background: transparent;
+  left: 0;
+  min-height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 400;
+  display: table;
+  height: 100% !important;
+  table-layout: fixed;
+  width: 100%;
+  outline: none;
+  @apply opacity-[1] min-w-[472px] pt-[25px];
+}
+
+.existAccount-modal-content {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  @apply bg-[#00000066];
+}
+
+.existAccount-modal-main {
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.existAccount-modal {
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  text-align: left;
+}
+
+.existAccount-modal-area {
+  background-color: transparent;
+  overflow: visible;
+  padding: 0;
+  width: 400px;
+  height: 485px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  @apply bg-white rounded-[8px] pt-3;
+}
+
+.existAccount-close-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 13px;
+}
+
+.existAccount-close-content {
+  @apply hover:bg-[#ebedf0] rounded-[50%] w-[36px] h-[36px] text-center;
+}
+
+.existAccount-close {
+  background-position: 0 -43px;
+  background-size: 43px 77px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.existAccount-heading-container {
+  border-radius: 8px 8px 0 0;
+}
+
+.existAccount-content-container {
+  margin: 0 auto 0 auto;
+  @apply pb-[0px];
+}
+
+.existAccount-content {
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @apply bg-[#fff] box-border p-[16px] pt-[0px] relative w-[399px];
+}
+
+.existAccount-profImg {
+  border-radius: 50%;
+  margin-top: 10px;
+  @apply w-[160px] h-[160px] text-center;
+}
+
+.existAccount-modal-form {
+  @apply m-[0px] p-[0px];
+}
+
+.existAccount-profileName-container {
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  @apply relative inline-block w-[370px] mb-[10px];
+}
+
+.existAccount-profileName {
+  padding: 12px 16px !important;
+  @apply w-[370px] text-center font-[500];
+}
+
+.existAccount-newPassword-input-container {
+  @apply relative inline-block w-[370px] mb-[10px] text-[15px] leading-[16px];
+}
+
+.existAccount-newPassword-input {
+  padding: 14px 16px !important;
+  @apply w-[370px] placeholder:text-[#8d949e] font-[500] border-[1px] text-[17px] leading-[16px] border-[#ccd0d5] focus:border-[#1877f2] focus:shadow-md p-[11px] rounded-[5px] focus:outline-none;
+}
+
+.existAccount-remember-container {
+  padding: 6px 0 16px;
+}
+
+.existAccount-remember-content {
+  @apply cursor-pointer relative text-left flex flex-row items-center;
+}
+
+.existAccount-checkbox-before {
+  @apply border-[1px] border-[#d7dade] rounded-[4px] w-[20px] h-[20px];
+}
+
+.existAccount-checkbox-after {
+  border-width: 0 2px 2px 0;
+  height: 10px;
+  left: 7.5px;
+  top: 4.5px;
+  transform: rotate(45deg);
+  width: 5px;
+  display: block;
+  position: absolute;
+  @apply border-solid border-[#fff];
+}
+
+.existAccount-remember-text {
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 20px;
+  @apply pl-[12px] text-[#606770];
+}
+
+.existAccount-login-button-container {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  @apply mt-[6px] text-center;
+}
+
+.existAccount-login-button {
+  display: block;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 40px;
+  margin: 0 0 8px;
+  padding: 0 16px;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  font-size: 17px;
+  line-height: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1) background-color,
+    200ms cubic-bezier(0.08, 0.52, 0.52, 1) box-shadow,
+    200ms cubic-bezier(0.08, 0.52, 0.52, 1) transform;
+  @apply hover:bg-blue-600;
+}
+
+.existAccount-forgot-text-container {
+  @apply p-[10px] pr-[0px] text-center leading-[18px];
+}
+
+.existAccount-forgot-text {
+  color: #1877f2;
+  font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: normal;
+  cursor: pointer;
+  text-decoration: none;
+  @apply hover:border-b-[1.5px] hover:border-[#1877f2];
+}
+
+/* End add account css */
