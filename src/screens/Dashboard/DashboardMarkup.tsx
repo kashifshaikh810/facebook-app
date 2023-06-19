@@ -59,6 +59,7 @@ const DashboardMarkup = (props: IProps) => {
     setIsPasswordRememberOrNot,
     isShowExistAccountModal,
     setIsShowExistAccountModal,
+    navigate,
   } = props;
 
   return (
@@ -76,6 +77,7 @@ const DashboardMarkup = (props: IProps) => {
         setIsPasswordRememberOrNot={setIsPasswordRememberOrNot}
         isShowExistAccountModal={isShowExistAccountModal}
         setIsShowExistAccountModal={setIsShowExistAccountModal}
+        navigate={navigate}
       />
       <div className="container">
         <div className={`content ${maxWidth > 1029 ? "ml-24" : "ml-0"}`}>
@@ -199,7 +201,14 @@ const DashboardMarkup = (props: IProps) => {
                 </div>
 
                 <div className="Forgotten-text-container">
-                  <a href="/" className="Forgotten-text">
+                  <a
+                    href="/recover/forgotPassword"
+                    onClick={(e: any) => {
+                      e.preventDefault();
+                      props.navigate("/recover/forgotPassword");
+                    }}
+                    className="Forgotten-text"
+                  >
                     Forgotten password?
                   </a>
                 </div>

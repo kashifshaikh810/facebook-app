@@ -14,6 +14,7 @@ interface Props {
   setIsPasswordRememberOrNot: Function;
   isShowExistAccountModal: boolean;
   setIsShowExistAccountModal: Function;
+  navigate: Function;
 }
 
 const img = "https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/iE9yyunejFh.png";
@@ -454,7 +455,14 @@ const renderAddAccountModal = (props: Props) => {
                           </div>
 
                           <div className="addAccount-forgot-text-container">
-                            <a href="/" className="addAccount-forgot-text">
+                            <a
+                              href="/recover/forgotPassword"
+                              onClick={(e: any) => {
+                                e.preventDefault();
+                                props.navigate("/recover/forgotPassword");
+                              }}
+                              className="addAccount-forgot-text"
+                            >
                               Forgotten password?
                             </a>
                           </div>
@@ -577,7 +585,14 @@ const renderExistAccountModal = (props: Props) => {
                           </div>
 
                           <div className="existAccount-forgot-text-container">
-                            <a href="/" className="existAccount-forgot-text">
+                            <a
+                              href="/recover/forgotPassword"
+                              onClick={(e: any) => {
+                                e.preventDefault();
+                                props.navigate("/recover/forgotPassword");
+                              }}
+                              className="existAccount-forgot-text"
+                            >
                               Forgotten password?
                             </a>
                           </div>
