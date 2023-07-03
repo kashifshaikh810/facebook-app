@@ -506,7 +506,7 @@ const renderExistAccountModal = (props: Props) => {
                   <div>
                     <div className="existAccount-content">
                       <img
-                        src="https://scontent.fkhi2-2.fna.fbcdn.net/v/t39.30808-1/347374312_1188554068457778_8034793456633306027_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=rKWrX07pE8EAX-T1C-6&_nc_ht=scontent.fkhi2-2.fna&oh=00_AfDotJBLSxml5vIdrY6w1Yz24JNbuxfykyqlUYMnZasOqQ&oe=6490B8CE"
+                        src="https://scontent.fkhi2-2.fna.fbcdn.net/v/t39.30808-1/347374312_1188554068457778_8034793456633306027_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=ePoGqXNj0cgAX8-ISW2&_nc_ht=scontent.fkhi2-2.fna&oh=00_AfDc_0YVzhWqccSZ9mL5edI2QglLzqn7JZI1zwMOl2DHlw&oe=64A873CE"
                         alt="prof"
                         className="existAccount-profImg"
                       />
