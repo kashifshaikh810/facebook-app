@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer";
 import "./ForgotPassword.css";
 
 const ForgotPasswordMarkup = (props: any) => {
@@ -63,11 +64,31 @@ const ForgotPasswordMarkup = (props: any) => {
                     </table>
                   </div>
                 </div>
+
+                <div className="forgotPassword-footer-container">
+                  <div className="forgotPassword-footer-main">
+                    <div className="forgotPassword-two-buttons-container">
+                      <a href="/" className="forgotPassword-try-another-text">
+                        Try another way
+                      </a>
+                      <button className="forgotPassword-continue-button">
+                        Continue
+                      </button>
+                    </div>
+
+                    <div className="forgotPassword-loginWith-text-container">
+                      <a className="forgotPassword-loginWith-text" href="/">
+                        Log in with password
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </form>
           </div>
         </div>
       </div>
+      <Footer navigate={props.navigate} />
     </div>
   );
 };
