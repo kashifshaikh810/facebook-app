@@ -202,10 +202,10 @@ const DashboardMarkup = (props: IProps) => {
 
                 <div className="Forgotten-text-container">
                   <a
-                    href="/recover/forgotPassword"
+                    href="/login/identify/"
                     onClick={(e: any) => {
                       e.preventDefault();
-                      props.navigate("/recover/forgotPassword");
+                      props.navigate("/login/identify/");
                     }}
                     className="Forgotten-text"
                   >

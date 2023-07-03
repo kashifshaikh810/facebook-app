@@ -1,0 +1,23 @@
+.findYourAccount-header-container {
+  @apply w-[100%] right-0 flex left-0 top-0 absolute z-[3] justify-between m-[4px];
+}
+
+.findYourAccount-facebook-img-container {
+  @apply flex items-center relative grow-[1];
+}
+
+.findYourAccount-facebook-img {
+  @apply w-[140px] h-[50px];
+}
+
+.findYourAccount-section-two-container {
+  @apply flex items-center pr-[16px] h-[50px] pl-[4px];
+}
+
+.findYourAccount-section-two-main {
+  @apply flex items-center;
+}
+
+.findYourAccount-inside-form {
+  @apply flex pt-[0px] box-border;
+}
