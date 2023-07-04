@@ -19,5 +19,74 @@
 }
 
 .findYourAccount-inside-form {
-  @apply flex pt-[0px] box-border;
+  @apply flex pt-[0px] box-border items-center pl-[16px] flex-row pr-[16px] relative z-0 justify-end flex-nowrap mt-[-6px] mr-[-6px] mb-[-6px] ml-[-6px];
+}
+
+.findYourAccount-emailOrPhone-input-container {
+  @apply min-w-[0] flex-col box-border flex relative flex-shrink-0 z-0 pt-[6px] pl-[4px] max-w-[100%] pr-[4px] pb-[6px];
+}
+
+.findYourAccount-emailOrPhone-input {
+  -webkit-tap-highlight-color: transparent;
+  border-right: 1px solid #ced0d4;
+  border-top-left-radius: 6px;
+  border-left: 1px solid #ced0d4;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  outline: none;
+  border-bottom: 1px solid #ced0d4;
+  border-top: 1px solid #ced0d4;
+  @apply pr-[12px] bg-transparent touch-manipulation box-border pl-[12px] pt-[8px] h-[40px] pb-[10px] font-[500] w-[188px] text-left focus:border-[#1876f2] hover:border-[#050505] placeholder:text-[#606770] placeholder:font-[500];
+}
+
+.findYourAccount-login-button-container {
+  border-right-style: solid;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  border-left-style: solid;
+  border-bottom-width: 0;
+  border-bottom-style: solid;
+  flex-direction: row;
+  -webkit-tap-highlight-color: transparent;
+  border-top-style: solid;
+  text-decoration: none;
+  border-bottom-color: #00000066;
+  border-top-color: #00000066;
+  border-top-left-radius: 6px;
+  border-right-color: #00000066;
+  border-left-color: #00000066;
+  outline-style: none;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  text-align: inherit;
+  padding-bottom: 2px;
+  list-style: none;
+  outline: none;
+  @apply bg-[#1b74e4] pr-[12px] touch-manipulation pt-0 min-w-0 mt-[0] mb-[0] box-border overflow-x-hidden inline-flex min-h-0 pl-[12px] h-10 items-stretch relative ml-0 z-0 mr-[0] overflow-y-hidden cursor-pointer;
+}
+
+.findYourAccount-login-button-content {
+  @apply flex box-border items-center flex-shrink-0 flex-row relative z-0 mr-[-6px] flex-nowrap mt-[-6px] ml-[-6px] mb-[-6px] justify-between cursor-pointer list-none text-inherit;
+}
+
+.findYourAccount-login-button-main {
+  flex-grow: 1;
+  flex-basis: 0px;
+  -webkit-tap-highlight-color: transparent;
+  @apply flex-shrink-0 min-w-0 flex-col box-border flex relative z-0 pr-1.5 pl-1.5 pt-1.5 max-w-full pb-1.5 cursor-pointer text-inherit list-none;
+}
+
+.findYourAccount-login-button {
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  line-height: 1.3333;
+  font-size: 0.9375rem;
+  @apply overflow-x-hidden relative overflow-y-hidden whitespace-nowrap text-[#ffffff] font-[600];
+}
+
+.findYourAccount-forgotten-account-text {
+  @apply inline pl-0 bg-transparent touch-manipulation;
 }
