@@ -55,7 +55,12 @@ const ForgotPasswordMarkup = (props: any) => {
                                   </div>
                                 </div>
 
-                                <a href="/">Not you?</a>
+                                <a
+                                  href="/"
+                                  className="forgotPassword-notYour-text"
+                                >
+                                  Not you?
+                                </a>
                               </div>
                             </div>
                           </td>
