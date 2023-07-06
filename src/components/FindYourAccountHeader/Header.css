@@ -7,7 +7,7 @@
 }
 
 .findYourAccount-facebook-img {
-  @apply w-[140px] h-[50px];
+  @apply max-w-[140px] h-auto;
 }
 
 .findYourAccount-section-two-container {
@@ -37,7 +37,7 @@
   outline: none;
   border-bottom: 1px solid #ced0d4;
   border-top: 1px solid #ced0d4;
-  @apply pr-[12px] bg-transparent touch-manipulation box-border pl-[12px] pt-[8px] h-[40px] pb-[10px] font-[500] w-[188px] text-left focus:border-[#1876f2] hover:border-[#050505] placeholder:text-[#606770] placeholder:font-[500];
+  @apply pr-[12px] bg-transparent touch-manipulation box-border pl-[12px] pt-[8px] h-[40px] pb-[10px] font-[500] w-[188px] text-left focus:border-[#1876f2] hover:border-[#050505] placeholder:text-[#606770] placeholder:font-[500] max-[949px]:hidden;
 }
 
 .findYourAccount-login-button-container {
@@ -88,5 +88,5 @@
 }
 
 .findYourAccount-forgotten-account-text {
-  @apply inline pl-0 bg-transparent touch-manipulation;
+  @apply inline pl-0 bg-transparent pt-0 mt-0 mb-0 box-border pr-0 ml-0 text-[#216fdb] pb-0 mr-0 border-l-0 touch-manipulation hover:border-b border-blue-700 max-[949px]:hidden;
 }
