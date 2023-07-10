@@ -15,7 +15,7 @@ const Header = () => {
       <div className="findYourAccount-section-two-container">
         <div className="findYourAccount-section-two-main">
           <form action="/">
-            <div className="findYourAccount-inside-form">
+            <div className="findYourAccount-inside-formHeader">
               <div className="findYourAccount-emailOrPhone-input-container">
                 <label>
                   <TextInput
