@@ -1,0 +1,139 @@
+.findYourAccount-container {
+  padding: 80px 0;
+  @apply bg-[#e9ebee];
+}
+
+.findYourAccount-form {
+  @apply m-0 p-0;
+}
+
+.findYourAccount-inside-form {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  width: 500px;
+  padding-top: 10px;
+  background-color: #fff;
+}
+
+.findYourAccount-titleHeading {
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: -15px;
+  padding: 11px 16px 18px 18px;
+  color: #162643;
+  font-weight: 600;
+  margin: 0;
+  border-bottom-width: 1px;
+}
+
+.findYourAccount-content-container {
+  margin: 16px;
+  padding: 0;
+}
+
+.findYourAccount-content {
+  width: 468px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.findYourAccount-subtitle {
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.findYourAccount-screen-textInput {
+  border-radius: 6px;
+  font-family: Roboto-Regular, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 0;
+  -webkit-appearance: none;
+  border: 1px solid #ccd0d5;
+  margin: 0;
+  padding: 13px 0 13px 16px;
+  width: 444px;
+  background-color: #fff;
+  color: #1c1e21;
+  @apply focus:outline-none w-full placeholder:text-[#303338];
+}
+
+.findYourAccount-screen-textInput:focus::placeholder {
+  color: #b3b3b3;
+}
+
+.findYourAccount-footer-container {
+  background-color: inherit;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 8px 8px;
+  padding: 16px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.findYourAccount-footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.findYourAccount-footer-cancel-button {
+  padding: 0 20px;
+  background-color: #e4e6eb;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 36px;
+  margin-left: 8px;
+  font-family: inherit;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #4b4f56;
+  transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1) background-color,
+    200ms cubic-bezier(0.08, 0.52, 0.52, 1) box-shadow,
+    200ms cubic-bezier(0.08, 0.52, 0.52, 1) transform;
+  box-sizing: content-box;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  justify-content: center;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+}
+
+.findYourAccount-footer-search-button {
+  padding: 0 20px;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 36px;
+  margin-left: 8px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1) background-color,
+    200ms cubic-bezier(0.08, 0.52, 0.52, 1) box-shadow,
+    200ms cubic-bezier(0.08, 0.52, 0.52, 1) transform;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  justify-content: center;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+}
