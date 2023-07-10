@@ -40,6 +40,10 @@
   @apply pr-[12px] bg-transparent touch-manipulation box-border pl-[12px] pt-[8px] h-[40px] pb-[10px] font-[500] w-[188px] text-left focus:border-[#1876f2] hover:border-[#050505] placeholder:text-[#606770] placeholder:font-[500] max-[949px]:hidden;
 }
 
+.findYourAccount-emailOrPhone-input:focus::placeholder {
+  color: #b3b3b3;
+}
+
 .findYourAccount-login-button-container {
   border-right-style: solid;
   border-left-width: 0;
