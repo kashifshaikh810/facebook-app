@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import Header from "../../components/FindYourAccountHeader/Header";
+import Footer from "../../components/Footer/Footer";
 import TextInput from "../../components/TextInput/TextInput";
 import "./FindYourAccount.css";
 
 const FindYourAccount = () => {
+  const navigate = useNavigate();
   return (
     <div style={{ zoom: 1 }}>
       <Header />
@@ -65,6 +68,7 @@ const FindYourAccount = () => {
           </form>
         </div>
       </div>
+      <Footer navigate={navigate} />
     </div>
   );
 };
