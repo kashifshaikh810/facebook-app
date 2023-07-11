@@ -579,7 +579,14 @@ const renderExistAccountModal = (props: Props) => {
                           </div>
 
                           <div className="existAccount-login-button-container">
-                            <button className="existAccount-login-button">
+                            <button
+                              className="existAccount-login-button"
+                              onClick={() =>
+                                props.navigate(
+                                  "/login/device-based/regular/login/"
+                                )
+                              }
+                            >
                               Log in
                             </button>
                           </div>
