@@ -1,6 +1,6 @@
 .findYourAccount-container {
-  padding: 80px 0;
-  @apply bg-[#e9ebee];
+  padding: 80px 0px;
+  @apply bg-[#e9ebee] w-max min-w-full max-[515px]:pl-12 max-[515px]:pr-12;
 }
 
 .findYourAccount-form {

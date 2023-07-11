@@ -4,7 +4,7 @@ import "./FindYourAccount.css";
 
 const FindYourAccount = () => {
   return (
-    <div>
+    <div style={{ zoom: 1 }}>
       <Header />
       <div className="findYourAccount-container">
         <div>
