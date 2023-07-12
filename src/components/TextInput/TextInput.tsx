@@ -3,7 +3,7 @@ interface IProps {
   className: any;
   value?: string;
   onChange?: Function;
-  placeholder: string;
+  placeholder?: string;
   name: string;
 }
 

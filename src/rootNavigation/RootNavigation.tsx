@@ -6,6 +6,7 @@ import Dashboard from "../screens/Dashboard/Dashboard";
 import FindYourAccount from "../screens/FindYourAccount/FindYourAccount";
 import ForgotPassword from "../screens/ForgotPassword/ForgotPassword";
 import LoginAs from "../screens/LoginAs/LoginAs";
+import ResetYourPassword from "../screens/ResetYourPassword/ResetYourPassword";
 
 const RootNavigation = () => {
   return (
@@ -20,6 +21,7 @@ const RootNavigation = () => {
           path="/login/device-based/regular/login/"
           element={<LoginAs />}
         />
+        <Route path="/recover/initiate/" element={<ResetYourPassword />} />
       </Routes>
     </Router>
   );

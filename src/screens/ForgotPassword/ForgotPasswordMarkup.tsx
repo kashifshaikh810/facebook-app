@@ -73,7 +73,10 @@ const ForgotPasswordMarkup = (props: any) => {
                 <div className="forgotPassword-footer-container">
                   <div className="forgotPassword-footer-main">
                     <div className="forgotPassword-two-buttons-container">
-                      <a href="/" className="forgotPassword-try-another-text">
+                      <a
+                        href="/recover/initiate/?is_from_lara_screen=1"
+                        className="forgotPassword-try-another-text"
+                      >
                         Try another way
                       </a>
                       <button className="forgotPassword-continue-button">
