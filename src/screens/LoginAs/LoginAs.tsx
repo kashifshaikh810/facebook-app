@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
+import TextInput from "../../components/TextInput/TextInput";
 import "./LoginAs.css";
 
 const LoginAs = () => {
+  const navigate = useNavigate();
   return (
     <div className="loginAs-content-container">
       <div className="loginAs-content">
@@ -30,7 +34,7 @@ const LoginAs = () => {
                   </div>
                 </div>
                 <div className="loginAs-NotYou-text-container">
-                  <a href="/" className="loginAs-NotYou-text">
+                  <a href="/login" className="loginAs-NotYou-text">
                     Not you?
                   </a>
                 </div>
@@ -47,11 +51,43 @@ const LoginAs = () => {
                   Invalid username or password
                 </div>
               </div>
-              <div>text input here</div>
+              <div className="loginAs-password-input-container">
+                <div className="loginAs-password-input-main">
+                  <TextInput
+                    placeholder="Password"
+                    type="password"
+                    name="password"
+                    className="loginAs-password-input"
+                  />
+                </div>
+              </div>
+
+              <div className="loginAs-login-button-container">
+                <button
+                  className="loginAs-login-button"
+                  type="submit"
+                  onClick={() => navigate("/recover/forgotPassword")}
+                >
+                  Log in
+                </button>
+              </div>
+
+              <div className="loginAs-forgottenPassword-container">
+                <div className="loginAs-forgottenPassword-main">
+                  <a
+                    href="/recover/forgotPassword"
+                    className="loginAs-forgottenPassword-text"
+                  >
+                    Forgotten Password?
+                  </a>
+                </div>
+              </div>
             </form>
           </div>
         </div>
       </div>
+
+      <Footer navigate={navigate} />
     </div>
   );
 };
