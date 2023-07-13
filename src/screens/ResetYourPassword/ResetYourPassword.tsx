@@ -1,10 +1,16 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "../../components/FindYourAccountHeader/Header";
+import Footer from "../../components/Footer/Footer";
 import TextInput from "../../components/TextInput/TextInput";
 import "./ResetYourPassword.css";
 
 const ResetYourPassword = () => {
+  const [isChecked, setIsChecked] = useState("send-code-via-email");
+  const navigate = useNavigate();
+
   return (
-    <div>
+    <div className="overflow-x-scroll">
       <Header />
 
       <div className="ResetYourPassword-container">
@@ -28,7 +34,10 @@ const ResetYourPassword = () => {
                       </div>
                       <table className="ResetYourPassword-sendCode-table">
                         <tbody>
-                          <tr>
+                          <tr
+                            className="hover:bg-gray-200"
+                            onClick={() => setIsChecked("send-code-via-email")}
+                          >
                             <td className="ResetYourPassword-sendCode-td">
                               <label
                                 htmlFor="/"
@@ -39,6 +48,9 @@ const ResetYourPassword = () => {
                                     type="radio"
                                     name="radio"
                                     className="ResetYourPassword-sendCode-radio-button"
+                                    checked={
+                                      isChecked === "send-code-via-email"
+                                    }
                                   />
                                   <label
                                     htmlFor="/"
@@ -57,7 +69,12 @@ const ResetYourPassword = () => {
                               </label>
                             </td>
                           </tr>
-                          <tr>
+                          <tr
+                            className="hover:bg-gray-200"
+                            onClick={() =>
+                              setIsChecked("enter-password-to-log-in")
+                            }
+                          >
                             <td className="ResetYourPassword-enterPassword-td">
                               <label htmlFor="/">
                                 <div className="ResetYourPassword-enterPassword-main">
@@ -65,6 +82,9 @@ const ResetYourPassword = () => {
                                     type="radio"
                                     name="radio"
                                     className="ResetYourPassword-sendCode-radio-button"
+                                    checked={
+                                      isChecked === "enter-password-to-log-in"
+                                    }
                                   />
 
                                   <label
@@ -85,23 +105,46 @@ const ResetYourPassword = () => {
                       </table>
                     </td>
                     <td className="ResetYourPassword-card-td-two">
-                      <div>
+                      <div className="ResetYourPassword-prof-img-container">
                         <img
-                          src="https://www.facebook.com/profile/pic.php?cuid=AYjP5SBfoS0j6e7mRSg_ltcXf6-6G6H9P-CUvIQ2XeyZ2zIogi8ro-f1xwlVmKBOtTBFDpHrtsZeLH7Tv_JV8f_QzrrN3wOigI_rOzdb3hrG6Q&square_px=50"
+                          src="https://scontent.fkhi2-2.fna.fbcdn.net/v/t39.30808-1/347374312_1188554068457778_8034793456633306027_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=ePoGqXNj0cgAX8-ISW2&_nc_ht=scontent.fkhi2-2.fna&oh=00_AfDc_0YVzhWqccSZ9mL5edI2QglLzqn7JZI1zwMOl2DHlw&oe=64A873CE"
                           alt="prof"
+                          className="ResetYourPassword-prof-img"
                         />
                       </div>
-                      <div>d</div>
-                      <div>d</div>
+                      <div className="ResetYourPassword-username-text">
+                        Muhammad Kashif
+                      </div>
+                      <div className="ResetYourPassword-facebookUser-text">
+                        Facebook user
+                      </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div className="ResetYourPassword-card-footer-container"></div>
+            <div className="ResetYourPassword-card-footer-container">
+              <div className="ResetYourPassword-card-footer-main">
+                <div className="pt-[5px]">
+                  <a href="/" className="ResetYourPassword-noLonger-text">
+                    No longer have access to these?
+                  </a>
+                </div>
+                <div>
+                  <a href="/" className="ResetYourPassword-notYou-text">
+                    Not you?
+                  </a>
+                  <button className="ResetYourPassword-continue-button">
+                    Continue
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </form>
       </div>
+
+      <Footer navigate={navigate} />
     </div>
   );
 };
