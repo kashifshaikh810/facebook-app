@@ -1,5 +1,5 @@
 .findYourAccount-header-container {
-  @apply w-max flex z-[3] justify-between m-[3px] min-w-full;
+  @apply max-[500px]:w-[40rem] flex z-[3] justify-between m-[3px];
 }
 
 .findYourAccount-facebook-img-container {
