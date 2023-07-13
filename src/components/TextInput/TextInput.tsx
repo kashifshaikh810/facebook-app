@@ -5,6 +5,7 @@ interface IProps {
   onChange?: Function;
   placeholder?: string;
   name: string;
+  checked?: any;
 }
 
 const TextInput = (props: IProps) => {
@@ -20,6 +21,7 @@ const TextInput = (props: IProps) => {
         }
         placeholder={props?.placeholder}
         name={props?.name}
+        checked={props.checked}
       />
     </div>
   );
