@@ -1,0 +1,183 @@
+.EnterSecurityCode-container {
+  background-color: #e9ebee;
+  padding: 80px 0;
+  @apply max-[450px]:overflow-x-scroll max-[450px]:w-[40rem];
+}
+
+.EnterSecurityCode-form {
+  margin: 0;
+  padding: 0;
+}
+
+.EnterSecurityCode-card-container {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  width: 500px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.EnterSecurityCode-card-heading-text-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0;
+  border-color: #ccc;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.EnterSecurityCode-card-heading-text {
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: -15px;
+  padding: 18px 16px 18px 18px;
+  min-height: 20px;
+  color: #162643;
+  font-weight: 600;
+  margin: 0;
+  vertical-align: bottom;
+}
+
+.EnterSecurityCode-card-content-container {
+  margin: 16px;
+  padding: 0;
+}
+
+.EnterSecurityCode-card-content-text {
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.EnterSecurityCode-card-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.EnterSecurityCode-card-content-textInput-container {
+  float: left;
+  max-width: 50%;
+}
+
+.EnterSecurityCode-card-content-textInput {
+  border-radius: 6px;
+  font-family: Roboto-Regular, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  height: 50px;
+  margin-bottom: 0;
+  padding: 16px 0 16px 16px;
+  width: 444px;
+  max-width: 100%;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #c1c1c1;
+  @apply focus:outline-none placeholder:text-[#202226];
+}
+
+.EnterSecurityCode-card-content-textInput:focus::placeholder {
+  color: #b3b3b3;
+}
+
+.EnterSecurityCode-card-content-weSent-text-container {
+  float: left;
+  max-width: 45%;
+  padding-left: 12px;
+  word-wrap: break-word;
+}
+
+.EnterSecurityCode-card-content-weSent-text {
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.EnterSecurityCode-card-content-gmail-text {
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.EnterSecurityCode-card-footer-container {
+  background-color: inherit;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 8px 8px;
+  padding: 16px;
+  line-height: 16px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border: 1px solid #ccc;
+}
+
+.EnterSecurityCode-card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.EnterSecurityCode-card-getACode-text {
+  color: #1877f2;
+  font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  cursor: pointer;
+  text-decoration: none;
+  @apply hover:border-b border-[#1877f2];
+}
+
+.EnterSecurityCode-card-cancel-text {
+  padding: 0 20px;
+  background-color: #e4e6eb;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 36px;
+  margin-left: 8px;
+  font-family: inherit;
+  color: #4b4f56;
+  transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1) background-color,
+    200ms cubic-bezier(0.08, 0.52, 0.52, 1) box-shadow,
+    200ms cubic-bezier(0.08, 0.52, 0.52, 1) transform;
+  box-sizing: content-box;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.EnterSecurityCode-card-continue-button {
+  padding: 0 20px;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-left: 8px;
+  line-height: 36px;
+  font-family: inherit;
+  transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1) background-color,
+    200ms cubic-bezier(0.08, 0.52, 0.52, 1) box-shadow,
+    200ms cubic-bezier(0.08, 0.52, 0.52, 1) transform;
+  color: #fff;
+  box-sizing: content-box;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+}

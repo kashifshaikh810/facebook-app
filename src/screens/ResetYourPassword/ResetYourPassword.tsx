@@ -134,7 +134,14 @@ const ResetYourPassword = () => {
                   <a href="/" className="ResetYourPassword-notYou-text">
                     Not you?
                   </a>
-                  <button className="ResetYourPassword-continue-button">
+                  <button
+                    className="ResetYourPassword-continue-button"
+                    onClick={() =>
+                      isChecked === "send-code-via-email"
+                        ? navigate("/recover/code/")
+                        : navigate("/login/device-based/regular/login/")
+                    }
+                  >
                     Continue
                   </button>
                 </div>
