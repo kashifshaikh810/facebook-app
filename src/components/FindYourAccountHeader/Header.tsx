@@ -2,7 +2,7 @@ import "./Header.css";
 import FacebookImg from "../images/images.png";
 import TextInput from "../TextInput/TextInput";
 
-const Header = () => {
+const Header = (props: any) => {
   return (
     <div className="findYourAccount-header-container">
       <div className="findYourAccount-facebook-img-container">
@@ -12,7 +12,11 @@ const Header = () => {
           className="findYourAccount-facebook-img"
         />
       </div>
-      <div className="findYourAccount-section-two-container">
+      <div
+        className={`findYourAccount-section-two-container ${
+          props.isNotShow ? `hidden` : `flex`
+        }`}
+      >
         <div className="findYourAccount-section-two-main">
           <form action="/">
             <div className="findYourAccount-inside-formHeader">

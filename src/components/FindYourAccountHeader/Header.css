@@ -11,7 +11,7 @@
 }
 
 .findYourAccount-section-two-container {
-  @apply flex items-center pr-[16px] h-[50px] pl-[4px];
+  @apply items-center pr-[16px] h-[50px] pl-[4px];
 }
 
 .findYourAccount-section-two-main {
