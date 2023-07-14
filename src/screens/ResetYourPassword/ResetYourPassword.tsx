@@ -131,7 +131,10 @@ const ResetYourPassword = () => {
                   </a>
                 </div>
                 <div>
-                  <a href="/" className="ResetYourPassword-notYou-text">
+                  <a
+                    href="/login/identify/"
+                    className="ResetYourPassword-notYou-text"
+                  >
                     Not you?
                   </a>
                   <button
