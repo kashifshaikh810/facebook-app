@@ -56,7 +56,7 @@ const ForgotPasswordMarkup = (props: any) => {
                                 </div>
 
                                 <a
-                                  href="/"
+                                  href="/login/identify/?ctx=recover&from_login_screen=0"
                                   className="forgotPassword-notYour-text"
                                 >
                                   Not you?
@@ -79,7 +79,14 @@ const ForgotPasswordMarkup = (props: any) => {
                       >
                         Try another way
                       </a>
-                      <button className="forgotPassword-continue-button">
+                      <button
+                        className="forgotPassword-continue-button"
+                        onClick={() =>
+                          props.navigate(
+                            "/recover/code/?em[0]=k****************g%40gmail.com&rm=send_email&lara=1&hash=AUZus-mmAysH6NY2F5E"
+                          )
+                        }
+                      >
                         Continue
                       </button>
                     </div>
