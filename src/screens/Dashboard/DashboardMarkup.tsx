@@ -175,7 +175,12 @@ const DashboardMarkup = (props: IProps) => {
           </div>
           <div className="inputs-card-container">
             <div className="inputs-card">
-              <form onSubmit={() => alert("clicked!")}>
+              <form
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  navigate(`/login/${true}`);
+                }}
+              >
                 <div>
                   <div className="email-text-input-container">
                     <TextInput

@@ -15,7 +15,7 @@ const RootNavigation = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login/:isHide" element={<Login isHide={true} />} />
         <Route path="/reg" element={<SignUp />} />
         <Route path="/recover/forgotPassword" element={<ForgotPassword />} />
         <Route path="/login/identify/" element={<FindYourAccount />} />

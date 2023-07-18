@@ -3,7 +3,11 @@ import Footer from "../../../components/Footer/Footer";
 import TextInput from "../../../components/TextInput/TextInput";
 import "./Login.css";
 
-const Login = () => {
+interface PProps {
+  isHide: Boolean;
+}
+
+const Login = (props: PProps) => {
   const navigate = useNavigate();
   return (
     <div>
@@ -16,7 +20,9 @@ const Login = () => {
           />
         </div>
         <div className="input-card-container">
-          <div className="input-card">
+          <div
+            className={`input-card ${props.isHide ? `h-[330px]` : `h-[410px]`}`}
+          >
             <div className="in-to-facebook-container">
               <span className="in-to-content">
                 <div>Log in to Facebook</div>
@@ -53,15 +59,28 @@ const Login = () => {
                 </a>
               </div>
 
-              <div className="or-text-container">
-                <div className="divider" />
-                <span className="or-text">or</span>
-                <div className="divider" />
-              </div>
-
-              <div className="acc-button-container">
-                <button className="acc-button">Create new account</button>
-              </div>
+              {props.isHide ? (
+                <></>
+              ) : (
+                <>
+                  <div
+                    className={`or-text-container ${
+                      props.isHide ? `hidden` : `flex`
+                    }`}
+                  >
+                    <div className="divider" />
+                    <span className="or-text">or</span>
+                    <div className="divider" />
+                  </div>
+                  <div
+                    className={`acc-button-container
+              ${props.isHide ? `hidden` : `flex`}
+              `}
+                  >
+                    <button className="acc-button">Create new account</button>
+                  </div>
+                </>
+              )}
             </form>
           </div>
         </div>
