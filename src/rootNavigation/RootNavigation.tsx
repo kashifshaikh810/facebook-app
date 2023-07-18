@@ -7,6 +7,7 @@ import EnterSecurityCode from "../screens/EnterSecurityCode/EnterSecurityCode";
 import FindYourAccount from "../screens/FindYourAccount/FindYourAccount";
 import ForgotPassword from "../screens/ForgotPassword/ForgotPassword";
 import LoginAs from "../screens/LoginAs/LoginAs";
+import LoginAsWeb from "../screens/LoginAsWeb/LoginAsWeb";
 import ResetYourPassword from "../screens/ResetYourPassword/ResetYourPassword";
 
 const RootNavigation = () => {
@@ -24,6 +25,7 @@ const RootNavigation = () => {
         />
         <Route path="/recover/initiate/" element={<ResetYourPassword />} />
         <Route path="/recover/code/" element={<EnterSecurityCode />} />
+        <Route path="/login/web" element={<LoginAsWeb />} />
       </Routes>
     </Router>
   );

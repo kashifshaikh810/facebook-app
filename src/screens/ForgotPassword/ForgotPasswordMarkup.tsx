@@ -92,7 +92,10 @@ const ForgotPasswordMarkup = (props: any) => {
                     </div>
 
                     <div className="forgotPassword-loginWith-text-container">
-                      <a className="forgotPassword-loginWith-text" href="/">
+                      <a
+                        className="forgotPassword-loginWith-text"
+                        href="/login/web"
+                      >
                         Log in with password
                       </a>
                     </div>
